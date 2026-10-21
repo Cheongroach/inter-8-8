@@ -1,0 +1,987 @@
+{
+  "training": [
+    {
+      "model": "q25",
+      "case": "sync-equal",
+      "measured_step_seconds": 182.0923671722412,
+      "supervised_tokens": 15971.0,
+      "relative_time": 12.856415150486486,
+      "baseline": {
+        "cuda8": 14.163541316986084,
+        "npu8": 14.9696164727211
+      },
+      "island_metrics": [
+        {
+          "device": "cuda",
+          "seconds": 181.44223594665527,
+          "tokens": 7559.0,
+          "exchange_seconds": 146.8260122416541
+        },
+        {
+          "device": "npu",
+          "seconds": 182.0923671722412,
+          "tokens": 8412.0,
+          "exchange_seconds": 127.01868193503469
+        }
+      ]
+    },
+    {
+      "model": "q25",
+      "case": "sync-h3-n1",
+      "measured_step_seconds": 188.96380424499512,
+      "supervised_tokens": 15971.0,
+      "relative_time": 13.341564797666399,
+      "baseline": {
+        "cuda8": 14.163541316986084,
+        "npu8": 14.9696164727211
+      },
+      "island_metrics": [
+        {
+          "device": "cuda",
+          "seconds": 184.97117614746094,
+          "tokens": 12022.0,
+          "exchange_seconds": 165.01926665846258
+        },
+        {
+          "device": "npu",
+          "seconds": 188.96380424499512,
+          "tokens": 3949.0,
+          "exchange_seconds": 126.27281726431102
+        }
+      ]
+    },
+    {
+      "model": "q25",
+      "case": "sync-h1-n3",
+      "measured_step_seconds": 182.5817470550537,
+      "supervised_tokens": 15971.0,
+      "relative_time": 12.89096723543897,
+      "baseline": {
+        "cuda8": 14.163541316986084,
+        "npu8": 14.9696164727211
+      },
+      "island_metrics": [
+        {
+          "device": "cuda",
+          "seconds": 179.4176788330078,
+          "tokens": 4097.0,
+          "exchange_seconds": 165.57170055247843
+        },
+        {
+          "device": "npu",
+          "seconds": 182.5817470550537,
+          "tokens": 11874.0,
+          "exchange_seconds": 127.20597911812365
+        }
+      ]
+    },
+    {
+      "model": "q25",
+      "case": "local-h4",
+      "measured_step_seconds": 76.9301335811615,
+      "supervised_tokens": 15971.0,
+      "relative_time": 5.431560642881068,
+      "baseline": {
+        "cuda8": 14.163541316986084,
+        "npu8": 14.9696164727211
+      },
+      "island_metrics": [
+        {
+          "device": "cuda",
+          "seconds": 75.50333333015442,
+          "tokens": 7559.0,
+          "exchange_seconds": 67.67400206439197
+        },
+        {
+          "device": "npu",
+          "seconds": 76.9301335811615,
+          "tokens": 8412.0,
+          "exchange_seconds": 33.12498835474253
+        }
+      ]
+    },
+    {
+      "model": "q25",
+      "case": "local-h8",
+      "measured_step_seconds": 63.35633826255798,
+      "supervised_tokens": 15971.0,
+      "relative_time": 4.473198958128914,
+      "baseline": {
+        "cuda8": 14.163541316986084,
+        "npu8": 14.9696164727211
+      },
+      "island_metrics": [
+        {
+          "device": "cuda",
+          "seconds": 61.75417369604111,
+          "tokens": 7559.0,
+          "exchange_seconds": 54.32188799418509
+        },
+        {
+          "device": "npu",
+          "seconds": 63.35633826255798,
+          "tokens": 8412.0,
+          "exchange_seconds": 16.26139972358942
+        }
+      ]
+    },
+    {
+      "model": "q35",
+      "case": "sync-equal",
+      "measured_step_seconds": 101.62607383728027,
+      "supervised_tokens": 16232.0,
+      "relative_time": 5.435448731315594,
+      "baseline": {
+        "cuda8": 19.204179883003235,
+        "npu8": 18.696905970573425
+      },
+      "island_metrics": [
+        {
+          "device": "cuda",
+          "seconds": 100.70230484008789,
+          "tokens": 7683.0,
+          "exchange_seconds": 76.51679101958871
+        },
+        {
+          "device": "npu",
+          "seconds": 101.62607383728027,
+          "tokens": 8549.0,
+          "exchange_seconds": 61.454285317100585
+        }
+      ]
+    },
+    {
+      "model": "q35",
+      "case": "sync-h3-n1",
+      "measured_step_seconds": 85.53087520599365,
+      "supervised_tokens": 16232.0,
+      "relative_time": 4.574600489546691,
+      "baseline": {
+        "cuda8": 19.204179883003235,
+        "npu8": 18.696905970573425
+      },
+      "island_metrics": [
+        {
+          "device": "cuda",
+          "seconds": 83.25943374633789,
+          "tokens": 12219.0,
+          "exchange_seconds": 53.915364034473896
+        },
+        {
+          "device": "npu",
+          "seconds": 85.53087520599365,
+          "tokens": 4013.0,
+          "exchange_seconds": 55.70988418068737
+        }
+      ]
+    },
+    {
+      "model": "q35",
+      "case": "sync-h1-n3",
+      "measured_step_seconds": 88.43830871582031,
+      "supervised_tokens": 16232.0,
+      "relative_time": 4.730103946343372,
+      "baseline": {
+        "cuda8": 19.204179883003235,
+        "npu8": 18.696905970573425
+      },
+      "island_metrics": [
+        {
+          "device": "cuda",
+          "seconds": 86.53422832489014,
+          "tokens": 4156.0,
+          "exchange_seconds": 57.58564793411642
+        },
+        {
+          "device": "npu",
+          "seconds": 88.43830871582031,
+          "tokens": 12076.0,
+          "exchange_seconds": 54.17794062476605
+        }
+      ]
+    },
+    {
+      "model": "q35",
+      "case": "local-h4",
+      "measured_step_seconds": 32.2698038816452,
+      "supervised_tokens": 16232.0,
+      "relative_time": 1.7259435295034273,
+      "baseline": {
+        "cuda8": 19.204179883003235,
+        "npu8": 18.696905970573425
+      },
+      "island_metrics": [
+        {
+          "device": "cuda",
+          "seconds": 30.081753373146057,
+          "tokens": 7683.0,
+          "exchange_seconds": 14.490363124758005
+        },
+        {
+          "device": "npu",
+          "seconds": 32.2698038816452,
+          "tokens": 8549.0,
+          "exchange_seconds": 16.53562649898231
+        }
+      ]
+    },
+    {
+      "model": "q35",
+      "case": "local-h8",
+      "measured_step_seconds": 24.577611565589905,
+      "supervised_tokens": 16232.0,
+      "relative_time": 1.3145282756554464,
+      "baseline": {
+        "cuda8": 19.204179883003235,
+        "npu8": 18.696905970573425
+      },
+      "island_metrics": [
+        {
+          "device": "cuda",
+          "seconds": 22.793804049491882,
+          "tokens": 7683.0,
+          "exchange_seconds": 6.698458844795823
+        },
+        {
+          "device": "npu",
+          "seconds": 24.577611565589905,
+          "tokens": 8549.0,
+          "exchange_seconds": 9.496007570065558
+        }
+      ]
+    }
+  ],
+  "pipelines": [
+    {
+      "model": "q25",
+      "layout": "H生成/N训练",
+      "implementation": "pipeline",
+      "mode": "overlap",
+      "interval": 1,
+      "wall_seconds": 231.38472693227232,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 17.702119125602113
+    },
+    {
+      "model": "q25",
+      "layout": "H生成/N训练",
+      "implementation": "pipeline",
+      "mode": "overlap",
+      "interval": 2,
+      "wall_seconds": 127.18480610381812,
+      "supervised_tokens": 4091.0,
+      "tokens_per_second": 32.16579185300332
+    },
+    {
+      "model": "q25",
+      "layout": "H生成/N训练",
+      "implementation": "pipeline",
+      "mode": "overlap",
+      "interval": 4,
+      "wall_seconds": 77.59352804441005,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 52.78790774477591
+    },
+    {
+      "model": "q25",
+      "layout": "H生成/N训练",
+      "implementation": "pipeline",
+      "mode": "serial",
+      "interval": 1,
+      "wall_seconds": 239.37847048602998,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 17.110979077122312
+    },
+    {
+      "model": "q25",
+      "layout": "H生成/N训练",
+      "implementation": "pipeline",
+      "mode": "serial",
+      "interval": 2,
+      "wall_seconds": 130.78614545520395,
+      "supervised_tokens": 4091.0,
+      "tokens_per_second": 31.280071644906943
+    },
+    {
+      "model": "q25",
+      "layout": "H生成/N训练",
+      "implementation": "pipeline",
+      "mode": "serial",
+      "interval": 4,
+      "wall_seconds": 76.823650194332,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 53.316914643326854
+    },
+    {
+      "model": "q25",
+      "layout": "H生成/N训练",
+      "implementation": "pipeline-buckets",
+      "mode": "frozen",
+      "interval": 0,
+      "wall_seconds": 20.36436152178794,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 201.135694611278
+    },
+    {
+      "model": "q25",
+      "layout": "H生成/N训练",
+      "implementation": "pipeline-buckets",
+      "mode": "overlap",
+      "interval": 4,
+      "wall_seconds": 84.78498030360788,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 48.31044349285178
+    },
+    {
+      "model": "q25",
+      "layout": "H生成/N训练",
+      "implementation": "pipeline-buckets",
+      "mode": "serial",
+      "interval": 4,
+      "wall_seconds": 95.4966058023274,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 42.89157678000085
+    },
+    {
+      "model": "q25",
+      "layout": "N生成/H训练",
+      "implementation": "pipeline",
+      "mode": "overlap",
+      "interval": 1,
+      "wall_seconds": 241.4594472264871,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 16.96351104522319
+    },
+    {
+      "model": "q25",
+      "layout": "N生成/H训练",
+      "implementation": "pipeline",
+      "mode": "overlap",
+      "interval": 2,
+      "wall_seconds": 123.04241882730275,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 33.28933256545432
+    },
+    {
+      "model": "q25",
+      "layout": "N生成/H训练",
+      "implementation": "pipeline",
+      "mode": "overlap",
+      "interval": 4,
+      "wall_seconds": 68.16141750756651,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 60.09264698090101
+    },
+    {
+      "model": "q25",
+      "layout": "N生成/H训练",
+      "implementation": "pipeline",
+      "mode": "serial",
+      "interval": 1,
+      "wall_seconds": 252.36804214771837,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 16.230264201211703
+    },
+    {
+      "model": "q25",
+      "layout": "N生成/H训练",
+      "implementation": "pipeline",
+      "mode": "serial",
+      "interval": 2,
+      "wall_seconds": 124.78581625036895,
+      "supervised_tokens": 4095.0,
+      "tokens_per_second": 32.81622962487848
+    },
+    {
+      "model": "q25",
+      "layout": "N生成/H训练",
+      "implementation": "pipeline",
+      "mode": "serial",
+      "interval": 4,
+      "wall_seconds": 67.43517244979739,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 60.73981649634391
+    },
+    {
+      "model": "q25",
+      "layout": "N生成/H训练",
+      "implementation": "pipeline-buckets",
+      "mode": "frozen",
+      "interval": 0,
+      "wall_seconds": 11.49697851203382,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 356.26751808857784
+    },
+    {
+      "model": "q25",
+      "layout": "N生成/H训练",
+      "implementation": "pipeline-buckets",
+      "mode": "overlap",
+      "interval": 4,
+      "wall_seconds": 75.2354556452483,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 54.44241634308085
+    },
+    {
+      "model": "q25",
+      "layout": "N生成/H训练",
+      "implementation": "pipeline-buckets",
+      "mode": "serial",
+      "interval": 4,
+      "wall_seconds": 77.97489722818136,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 52.52972617602426
+    },
+    {
+      "model": "q25",
+      "layout": "H20同构",
+      "implementation": "pipeline-shared-parameters",
+      "mode": "frozen",
+      "interval": 0,
+      "wall_seconds": 10.92471387796104,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 374.9297277490316
+    },
+    {
+      "model": "q25",
+      "layout": "H20同构",
+      "implementation": "pipeline-shared-parameters",
+      "mode": "overlap",
+      "interval": 4,
+      "wall_seconds": 64.73431681282818,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 63.274012944990396
+    },
+    {
+      "model": "q25",
+      "layout": "H20同构",
+      "implementation": "pipeline-shared-parameters",
+      "mode": "serial",
+      "interval": 4,
+      "wall_seconds": 87.55892500653863,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 46.77992562944467
+    },
+    {
+      "model": "q25",
+      "layout": "H20同构",
+      "implementation": "pipeline-homogeneous",
+      "mode": "overlap",
+      "interval": 1,
+      "wall_seconds": 236.08481252426282,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 17.349697154191347
+    },
+    {
+      "model": "q25",
+      "layout": "H20同构",
+      "implementation": "pipeline-homogeneous",
+      "mode": "overlap",
+      "interval": 2,
+      "wall_seconds": 124.3420120831579,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 32.9414003471382
+    },
+    {
+      "model": "q25",
+      "layout": "H20同构",
+      "implementation": "pipeline-homogeneous",
+      "mode": "overlap",
+      "interval": 4,
+      "wall_seconds": 68.19152509607375,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 60.06611516943232
+    },
+    {
+      "model": "q25",
+      "layout": "H20同构",
+      "implementation": "pipeline-homogeneous",
+      "mode": "serial",
+      "interval": 1,
+      "wall_seconds": 246.32688779616728,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 16.628310602411354
+    },
+    {
+      "model": "q25",
+      "layout": "H20同构",
+      "implementation": "pipeline-homogeneous",
+      "mode": "serial",
+      "interval": 2,
+      "wall_seconds": 126.99047985067591,
+      "supervised_tokens": 4091.0,
+      "tokens_per_second": 32.215013320766076
+    },
+    {
+      "model": "q25",
+      "layout": "H20同构",
+      "implementation": "pipeline-homogeneous",
+      "mode": "serial",
+      "interval": 4,
+      "wall_seconds": 66.87440005596727,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 61.24914760464471
+    },
+    {
+      "model": "q25",
+      "layout": "H20同构",
+      "implementation": "pipeline-shared-buckets",
+      "mode": "frozen",
+      "interval": 0,
+      "wall_seconds": 11.380502282641828,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 359.9138156008673
+    },
+    {
+      "model": "q25",
+      "layout": "H20同构",
+      "implementation": "pipeline-shared-buckets",
+      "mode": "overlap",
+      "interval": 4,
+      "wall_seconds": 81.15028119273484,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 50.4742551695151
+    },
+    {
+      "model": "q25",
+      "layout": "H20同构",
+      "implementation": "pipeline-shared-buckets",
+      "mode": "serial",
+      "interval": 4,
+      "wall_seconds": 95.5619076481089,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 42.86226699327571
+    },
+    {
+      "model": "q25",
+      "layout": "910B4同构",
+      "implementation": "pipeline-shared-parameters",
+      "mode": "frozen",
+      "interval": 0,
+      "wall_seconds": 23.01495791002526,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 177.97121402580504
+    },
+    {
+      "model": "q25",
+      "layout": "910B4同构",
+      "implementation": "pipeline-shared-parameters",
+      "mode": "overlap",
+      "interval": 4,
+      "wall_seconds": 70.76610232898383,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 57.88081956185952
+    },
+    {
+      "model": "q25",
+      "layout": "910B4同构",
+      "implementation": "pipeline-shared-parameters",
+      "mode": "serial",
+      "interval": 4,
+      "wall_seconds": 74.57076577399857,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 54.92769126729551
+    },
+    {
+      "model": "q25",
+      "layout": "910B4同构",
+      "implementation": "pipeline-shared-buckets",
+      "mode": "frozen",
+      "interval": 0,
+      "wall_seconds": 24.21877370099537,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 169.1249957809242
+    },
+    {
+      "model": "q25",
+      "layout": "910B4同构",
+      "implementation": "pipeline-shared-buckets",
+      "mode": "overlap",
+      "interval": 4,
+      "wall_seconds": 71.96103673102334,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 56.91969135061336
+    },
+    {
+      "model": "q25",
+      "layout": "910B4同构",
+      "implementation": "pipeline-shared-buckets",
+      "mode": "serial",
+      "interval": 4,
+      "wall_seconds": 72.36577414700878,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 56.60134294534189
+    },
+    {
+      "model": "q35",
+      "layout": "H生成/N训练",
+      "implementation": "pipeline",
+      "mode": "overlap",
+      "interval": 1,
+      "wall_seconds": 117.03534469474107,
+      "supervised_tokens": 3975.0,
+      "tokens_per_second": 33.964098711956154
+    },
+    {
+      "model": "q35",
+      "layout": "H生成/N训练",
+      "implementation": "pipeline",
+      "mode": "overlap",
+      "interval": 2,
+      "wall_seconds": 70.45211199019104,
+      "supervised_tokens": 4047.0,
+      "tokens_per_second": 57.44327438421518
+    },
+    {
+      "model": "q35",
+      "layout": "H生成/N训练",
+      "implementation": "pipeline",
+      "mode": "overlap",
+      "interval": 4,
+      "wall_seconds": 44.241827118210495,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 92.58207146499234
+    },
+    {
+      "model": "q35",
+      "layout": "H生成/N训练",
+      "implementation": "pipeline",
+      "mode": "serial",
+      "interval": 1,
+      "wall_seconds": 143.84232199098915,
+      "supervised_tokens": 3975.0,
+      "tokens_per_second": 27.63442598103366
+    },
+    {
+      "model": "q35",
+      "layout": "H生成/N训练",
+      "implementation": "pipeline",
+      "mode": "serial",
+      "interval": 2,
+      "wall_seconds": 70.2304656310007,
+      "supervised_tokens": 4047.0,
+      "tokens_per_second": 57.62456454814673
+    },
+    {
+      "model": "q35",
+      "layout": "H生成/N训练",
+      "implementation": "pipeline",
+      "mode": "serial",
+      "interval": 4,
+      "wall_seconds": 48.36353096924722,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 84.69191388454477
+    },
+    {
+      "model": "q35",
+      "layout": "H生成/N训练",
+      "implementation": "pipeline-buckets",
+      "mode": "frozen",
+      "interval": 0,
+      "wall_seconds": 21.950339160859585,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 186.60303925069735
+    },
+    {
+      "model": "q35",
+      "layout": "H生成/N训练",
+      "implementation": "pipeline-buckets",
+      "mode": "overlap",
+      "interval": 4,
+      "wall_seconds": 52.79194659832865,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 77.58759174320114
+    },
+    {
+      "model": "q35",
+      "layout": "H生成/N训练",
+      "implementation": "pipeline-buckets",
+      "mode": "serial",
+      "interval": 4,
+      "wall_seconds": 84.60931139066815,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 48.41074738319832
+    },
+    {
+      "model": "q35",
+      "layout": "N生成/H训练",
+      "implementation": "pipeline",
+      "mode": "frozen",
+      "interval": 0,
+      "wall_seconds": 19.386529319919646,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 211.28072655023212
+    },
+    {
+      "model": "q35",
+      "layout": "N生成/H训练",
+      "implementation": "pipeline",
+      "mode": "overlap",
+      "interval": 1,
+      "wall_seconds": 139.43361773248762,
+      "supervised_tokens": 3933.0,
+      "tokens_per_second": 28.206970915333446
+    },
+    {
+      "model": "q35",
+      "layout": "N生成/H训练",
+      "implementation": "pipeline",
+      "mode": "overlap",
+      "interval": 2,
+      "wall_seconds": 79.28594191838056,
+      "supervised_tokens": 4050.0,
+      "tokens_per_second": 51.08093442554037
+    },
+    {
+      "model": "q35",
+      "layout": "N生成/H训练",
+      "implementation": "pipeline",
+      "mode": "overlap",
+      "interval": 4,
+      "wall_seconds": 49.265367317944765,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 83.14157029552977
+    },
+    {
+      "model": "q35",
+      "layout": "N生成/H训练",
+      "implementation": "pipeline",
+      "mode": "serial",
+      "interval": 1,
+      "wall_seconds": 150.4207708556205,
+      "supervised_tokens": 3933.0,
+      "tokens_per_second": 26.146654997367623
+    },
+    {
+      "model": "q35",
+      "layout": "N生成/H训练",
+      "implementation": "pipeline",
+      "mode": "serial",
+      "interval": 2,
+      "wall_seconds": 82.39501677080989,
+      "supervised_tokens": 4050.0,
+      "tokens_per_second": 49.15345804547242
+    },
+    {
+      "model": "q35",
+      "layout": "N生成/H训练",
+      "implementation": "pipeline",
+      "mode": "serial",
+      "interval": 4,
+      "wall_seconds": 54.13782618008554,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 75.65874526204568
+    },
+    {
+      "model": "q35",
+      "layout": "N生成/H训练",
+      "implementation": "pipeline-buckets",
+      "mode": "frozen",
+      "interval": 0,
+      "wall_seconds": 19.310811148956418,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 212.1091635356474
+    },
+    {
+      "model": "q35",
+      "layout": "N生成/H训练",
+      "implementation": "pipeline-buckets",
+      "mode": "overlap",
+      "interval": 4,
+      "wall_seconds": 54.83726727962494,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 74.69372934128484
+    },
+    {
+      "model": "q35",
+      "layout": "N生成/H训练",
+      "implementation": "pipeline-buckets",
+      "mode": "serial",
+      "interval": 4,
+      "wall_seconds": 76.11330061871558,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 53.81451029851713
+    },
+    {
+      "model": "q35",
+      "layout": "H20同构",
+      "implementation": "pipeline-shared-parameters",
+      "mode": "frozen",
+      "interval": 0,
+      "wall_seconds": 21.784777144901454,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 188.02120273048718
+    },
+    {
+      "model": "q35",
+      "layout": "H20同构",
+      "implementation": "pipeline-shared-parameters",
+      "mode": "overlap",
+      "interval": 4,
+      "wall_seconds": 50.64800572954118,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 80.87189102513761
+    },
+    {
+      "model": "q35",
+      "layout": "H20同构",
+      "implementation": "pipeline-shared-parameters",
+      "mode": "serial",
+      "interval": 4,
+      "wall_seconds": 73.85025883279741,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 55.46358353697385
+    },
+    {
+      "model": "q35",
+      "layout": "H20同构",
+      "implementation": "pipeline-homogeneous",
+      "mode": "overlap",
+      "interval": 1,
+      "wall_seconds": 141.28078735712916,
+      "supervised_tokens": 3948.0,
+      "tokens_per_second": 27.944351626667093
+    },
+    {
+      "model": "q35",
+      "layout": "H20同构",
+      "implementation": "pipeline-homogeneous",
+      "mode": "overlap",
+      "interval": 2,
+      "wall_seconds": 84.2593902121298,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 48.61179258107601
+    },
+    {
+      "model": "q35",
+      "layout": "H20同构",
+      "implementation": "pipeline-homogeneous",
+      "mode": "overlap",
+      "interval": 4,
+      "wall_seconds": 52.763737654313445,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 77.62907220173307
+    },
+    {
+      "model": "q35",
+      "layout": "H20同构",
+      "implementation": "pipeline-homogeneous",
+      "mode": "serial",
+      "interval": 1,
+      "wall_seconds": 147.28442575410008,
+      "supervised_tokens": 3948.0,
+      "tokens_per_second": 26.805278153383412
+    },
+    {
+      "model": "q35",
+      "layout": "H20同构",
+      "implementation": "pipeline-homogeneous",
+      "mode": "serial",
+      "interval": 2,
+      "wall_seconds": 77.69814809504896,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 52.71682917061704
+    },
+    {
+      "model": "q35",
+      "layout": "H20同构",
+      "implementation": "pipeline-homogeneous",
+      "mode": "serial",
+      "interval": 4,
+      "wall_seconds": 56.44437263859436,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 72.567021450059
+    },
+    {
+      "model": "q35",
+      "layout": "H20同构",
+      "implementation": "pipeline-shared-buckets",
+      "mode": "frozen",
+      "interval": 0,
+      "wall_seconds": 22.502287222072482,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 182.0259407222496
+    },
+    {
+      "model": "q35",
+      "layout": "H20同构",
+      "implementation": "pipeline-shared-buckets",
+      "mode": "overlap",
+      "interval": 4,
+      "wall_seconds": 62.28380540199578,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 65.76348335756553
+    },
+    {
+      "model": "q35",
+      "layout": "H20同构",
+      "implementation": "pipeline-shared-buckets",
+      "mode": "serial",
+      "interval": 4,
+      "wall_seconds": 75.15296871308237,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 54.502171639255316
+    },
+    {
+      "model": "q35",
+      "layout": "910B4同构",
+      "implementation": "pipeline-shared-parameters",
+      "mode": "frozen",
+      "interval": 0,
+      "wall_seconds": 19.334437409008387,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 211.84997077244014
+    },
+    {
+      "model": "q35",
+      "layout": "910B4同构",
+      "implementation": "pipeline-shared-parameters",
+      "mode": "overlap",
+      "interval": 4,
+      "wall_seconds": 40.69584856199799,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 100.64908693966558
+    },
+    {
+      "model": "q35",
+      "layout": "910B4同构",
+      "implementation": "pipeline-shared-parameters",
+      "mode": "serial",
+      "interval": 4,
+      "wall_seconds": 61.94756197501556,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 66.12043911674816
+    },
+    {
+      "model": "q35",
+      "layout": "910B4同构",
+      "implementation": "pipeline-shared-buckets",
+      "mode": "frozen",
+      "interval": 0,
+      "wall_seconds": 20.06573911299347,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 204.12903690886998
+    },
+    {
+      "model": "q35",
+      "layout": "910B4同构",
+      "implementation": "pipeline-shared-buckets",
+      "mode": "overlap",
+      "interval": 4,
+      "wall_seconds": 48.705618695996236,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 84.09707359567336
+    },
+    {
+      "model": "q35",
+      "layout": "910B4同构",
+      "implementation": "pipeline-shared-buckets",
+      "mode": "serial",
+      "interval": 4,
+      "wall_seconds": 71.78145648600184,
+      "supervised_tokens": 4096.0,
+      "tokens_per_second": 57.0620909705108
+    }
+  ],
+  "timing_note": "Training uses max of each island's sum of measured step times, not a complete case timer. Pipeline includes update, wait and final weight publication, excludes model load."
+}

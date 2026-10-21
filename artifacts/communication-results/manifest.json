@@ -1,0 +1,136 @@
+{
+  "control_plane": "cn",
+  "source_sha256": "01e7c3c4be30b6b09c86d9f6dae9e84453f4ec92c6414bc7a02d07bffa240175",
+  "jobs": [
+    {
+      "device": "cuda",
+      "sid": "695eeb0b1a5d04f6",
+      "status": "done",
+      "platform_id": "redacted",
+      "image": {
+        "image_source": "vid",
+        "image_vid": "d7iu6hbc77u4ebjdshsg"
+      },
+      "resource": {
+        "resource_backend": "arnold",
+        "arnold_resource_config": {
+          "group_id": 2079,
+          "cluster_ids": [
+            20
+          ],
+          "cluster_select_mode": "single",
+          "roles": [
+            {
+              "name": "worker",
+              "num": 1,
+              "gpu": 1,
+              "cpu": 20,
+              "memory_mb": 230400,
+              "gpu_type": "NVIDIA_H20",
+              "queue_name": "compute-124-hl-cloudnative-ai-search.douyin.life.nlp-guarantee",
+              "ports": 2,
+              "advanced": {
+                "pod_no_restart_state": "any",
+                "is_complete_trial_on_task_no_restart": true,
+                "is_fail_trial_on_pod_failure": true,
+                "is_skip_install_dependency": true
+              }
+            }
+          ]
+        }
+      },
+      "create_request_id": "redacted",
+      "precheck_sid": "8780255a-f0fc-4954-8a10-31ff83301821",
+      "precheck_status": "success"
+    },
+    {
+      "device": "npu",
+      "sid": "bd1ddb781aa1010a",
+      "status": "done",
+      "platform_id": "redacted",
+      "image": {
+        "image_source": "vid",
+        "image_vid": "d6nakm3c77u7jl17ea90"
+      },
+      "resource": {
+        "resource_backend": "arnold",
+        "arnold_resource_config": {
+          "group_id": 2079,
+          "cluster_ids": [
+            20
+          ],
+          "cluster_select_mode": "single",
+          "roles": [
+            {
+              "name": "worker",
+              "num": 1,
+              "gpu": 1,
+              "cpu": 15,
+              "memory_mb": 128000,
+              "gpu_type": "ASCEND910B4_64G",
+              "queue_name": "compute-124-hl-cloudnative-ascend-search.douyin.life.nlp-guarantee",
+              "ports": 2,
+              "advanced": {
+                "pod_no_restart_state": "any",
+                "is_complete_trial_on_task_no_restart": true,
+                "is_fail_trial_on_pod_failure": true,
+                "is_skip_install_dependency": true
+              }
+            }
+          ]
+        }
+      },
+      "create_request_id": "redacted",
+      "precheck_sid": "1dc8c2f5-341b-49ce-a213-4e73ed49292e",
+      "precheck_status": "success"
+    }
+  ],
+  "pods": [
+    {
+      "container_id": "containerd://redacted",
+      "created_at": "2026-10-18T17:48:41.000Z",
+      "exit_status": 0,
+      "gpuv": "NVIDIA-H20",
+      "host": "redacted-ipv6-c7ba0e6e",
+      "job_run_sid": "695eeb0b1a5d04f6",
+      "object": "job_run_trial_pod",
+      "pod_name": "trial-redacted-worker-0",
+      "port_list": "11308,9902,9424,11788,10078,11002,9715,11963,11079,11228,10919,9876,10431,9721,11713,10345,9665",
+      "schedule_at": "2026-10-18T17:48:53.000Z",
+      "sid": "5368142285",
+      "start_at": "2026-10-18T17:48:53.000Z",
+      "status": 3,
+      "stop_at": "2026-10-18T17:52:00.000Z",
+      "platform_id": "redacted"
+    },
+    {
+      "container_id": "containerd://redacted",
+      "created_at": "2026-10-18T17:49:28.000Z",
+      "exit_status": 0,
+      "gpuv": "Ascend910b4-64G",
+      "host": "redacted-ipv6-1b30c0d1",
+      "job_run_sid": "bd1ddb781aa1010a",
+      "object": "job_run_trial_pod",
+      "pod_name": "trial-redacted-worker-0",
+      "port_list": "10597,11909,10083,9309,9847,11345,11715,11641,11658,11006,9907,9364,11112,9554,11465,10562,11727",
+      "schedule_at": "2026-10-18T17:49:40.000Z",
+      "sid": "5368147679",
+      "start_at": "2026-10-18T17:49:40.000Z",
+      "status": 3,
+      "stop_at": "2026-10-18T17:52:06.000Z",
+      "platform_id": "redacted"
+    }
+  ],
+  "status": "passed",
+  "tests": {
+    "tcp_per_rank": 15,
+    "gloo_per_rank": 15,
+    "payload_bytes": [
+      4096,
+      1048576,
+      16777216,
+      67108864,
+      268435456
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "experiment-code/original/homogeneous_pipeline.py": "4fa59f5f522d508fa18676dc0e423e727134c21faf917a6f5827cf79849dc208",
+  "experiment-code/original/hardware_experiments.py": "9d97c8c067e966e90407ccf5d59fe9a8a38ec95bd3c7ff2d0af8b8bacf6dd8da",
+  "experiment-code/original/disaggregated_experiment.py": "18708c89b523bded3fe7e60f2858b019f449de8ce2b6cb301717cf3b4ce65057",
+  "experiment-code/current/shared_world_pipeline.py": "27e788bf20dbbee772ac0ca2244da8e133e5ab665659f29d3071d9119eac1424",
+  "experiment-code/current/hardware_experiments.py": "9d97c8c067e966e90407ccf5d59fe9a8a38ec95bd3c7ff2d0af8b8bacf6dd8da",
+  "experiment-code/current/disaggregated_experiment.py": "96784ac7dc9bc62c94e17448cd18ed7c4751d0819deb6f2f861f762b26398fc6",
+  "experiment-code/current/extra_comparisons.py": "a2e8f8a2f8284e9b3c7af4f636a1daae03223648ba73c50ab3aece24a65c2c9c",
+  "experiment-code/current/worker_orchestrator.py": "2111a84350bc3f075a4bd5ff43816a0e85b6a0a39955ab7b74b592e7e56f3a7b"
+}

@@ -1,0 +1,8 @@
+{
+  "prepare_experiment_assets.py": "98551379a4dc166de57c236d7dbf5d95378ae4bc5ee68e293614db7bad66faec",
+  "hardware_experiments.py": "9d97c8c067e966e90407ccf5d59fe9a8a38ec95bd3c7ff2d0af8b8bacf6dd8da",
+  "auto_mixed.py": "c789e9060f09b94f9dcfebe3ff8c9428cf3b93107c6d765a6dfb71ad03194ddc",
+  "auto16.py": "3d692611ba63cba1697fee29abf17aabc11cadb0599ea39add48dabbacc96ba0",
+  "train16.py": "d2b76677a7bac103c4a3bc40e10cdf816197f4465f909cc246ac0311b13fa0ba",
+  "pipeline16.py": "b221374a480e218be260a6e5e4e92bdbd5f4bcdaf0a9386d08044ad750c51aac"
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "device": "cuda",
+    "trace_id": "redacted",
+    "timestamp_us": 1792345733582509,
+    "event": "Bind",
+    "source": "godel-binder",
+    "message": "Successfully assigned arnold/trial-redacted-worker-0 to compute-node-0d54834c"
+  },
+  {
+    "device": "npu",
+    "trace_id": "redacted",
+    "timestamp_us": 1792345780597590,
+    "event": "Bind",
+    "source": "godel-binder",
+    "message": "Successfully assigned arnold/trial-redacted-worker-0 to compute-node-30425be1"
+  }
+]
