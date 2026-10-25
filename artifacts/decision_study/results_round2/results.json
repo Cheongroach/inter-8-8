@@ -1,0 +1,120 @@
+{
+  "round": 2,
+  "selected_on_validation_only": "temperature",
+  "selected_parameters": {
+    "temperature": 1.582823071997706
+  },
+  "selection_metrics": {
+    "shipped": {
+      "n": 512,
+      "accuracy": 0.9453125,
+      "nll": 0.19062535594199537,
+      "brier_multiclass_sum": 0.09594303827975062,
+      "ece_15": 0.03804965524140308,
+      "mean_confidence": 0.9253717499883638
+    },
+    "temperature": {
+      "n": 512,
+      "accuracy": 0.9453125,
+      "nll": 0.18617104144234825,
+      "brier_multiclass_sum": 0.0958046786546835,
+      "ece_15": 0.032564021464389636,
+      "mean_confidence": 0.9395538281398723
+    },
+    "affine_0.1": {
+      "n": 512,
+      "accuracy": 0.943359375,
+      "nll": 0.17841305099357124,
+      "brier_multiclass_sum": 0.09221060873257554,
+      "ece_15": 0.03373716724987077,
+      "mean_confidence": 0.9320957660845434
+    },
+    "affine_1.0": {
+      "n": 512,
+      "accuracy": 0.943359375,
+      "nll": 0.18595061704703936,
+      "brier_multiclass_sum": 0.09413146885203164,
+      "ece_15": 0.032130165854729074,
+      "mean_confidence": 0.9263253475170508
+    },
+    "affine_10.0": {
+      "n": 512,
+      "accuracy": 0.9453125,
+      "nll": 0.18990919312531532,
+      "brier_multiclass_sum": 0.09564235083156071,
+      "ece_15": 0.0328115868601271,
+      "mean_confidence": 0.9254417322539079
+    }
+  },
+  "test_metrics": {
+    "shipped": {
+      "n": 512,
+      "accuracy": 0.9375,
+      "nll": 0.18034716373420095,
+      "brier_multiclass_sum": 0.09256145035392839,
+      "ece_15": 0.033402609709058624,
+      "mean_confidence": 0.9236613506620941
+    },
+    "temperature": {
+      "n": 512,
+      "accuracy": 0.9375,
+      "nll": 0.17462761641245356,
+      "brier_multiclass_sum": 0.09268818985023669,
+      "ece_15": 0.023465186883825016,
+      "mean_confidence": 0.9376633402642435
+    },
+    "affine_0.1": {
+      "n": 512,
+      "accuracy": 0.94140625,
+      "nll": 0.17675713600244827,
+      "brier_multiclass_sum": 0.0934168641679875,
+      "ece_15": 0.026674392134356226,
+      "mean_confidence": 0.9314375993166372
+    },
+    "affine_1.0": {
+      "n": 512,
+      "accuracy": 0.939453125,
+      "nll": 0.17920338786425583,
+      "brier_multiclass_sum": 0.0926328022484138,
+      "ece_15": 0.031338585782828415,
+      "mean_confidence": 0.9249016797306309
+    },
+    "affine_10.0": {
+      "n": 512,
+      "accuracy": 0.935546875,
+      "nll": 0.18016145651512028,
+      "brier_multiclass_sum": 0.09254268154086678,
+      "ece_15": 0.026776165541970515,
+      "mean_confidence": 0.9237055895217763
+    }
+  },
+  "test_paired_selected_vs_shipped": {
+    "delta": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "method": "paired case bootstrap; exact-text duplicates removed",
+    "seed": 20261025,
+    "draws": 2000
+  },
+  "test_paired_nll_difference": {
+    "mean": -0.005719547321747415,
+    "ci95": [
+      -0.009581817346430765,
+      -0.0012813864394025341
+    ],
+    "direction": "negative favors selected",
+    "draws": 2000,
+    "seed": 20261025
+  },
+  "inference_seconds": 299.29044871404767,
+  "inferred_rows": 2048,
+  "torch": "2.9.1",
+  "laya": "0.4.15",
+  "dtype": "torch.float32",
+  "timing_scope": "CPU eager, eight-thread/eight-row batches, excluding model load",
+  "quality_scope": "fresh 512-case custom holdout; no Jev or SOTA claim"
+}

@@ -84,3 +84,13 @@ frequent cross-node synchronization. This is not evidence that mixing H20 and
 the mixed arm to beat tuned homogeneous H20 and Ascend baselines at a common
 quality threshold.
 
+
+
+## 2026-10-25 follow-up
+
+The user cancelled the two prolonged-queue sixteen-card arms and requested
+continued Jev/Laya iteration if SOTA was not established. Their stopped state
+was confirmed. Two separate AG News calibration rounds were completed with
+real Laya weights; the negative first round is retained. A fresh 512-case
+holdout supports the second round's NLL improvement, with unchanged accuracy
+and slightly worse Brier. Jev remains unmeasured. No SOTA claim is made.

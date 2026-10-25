@@ -8,6 +8,19 @@ The primary report is:
 
 - [Cross-hardware low-frequency synchronization study](artifacts/16card-experiments/paper/report.md)
 
+## Latest update: 2026-10-25
+
+Both missing sixteen-card experiment arms are now stopped and will not be
+restarted. The original three-arm training comparison remains incomplete.
+
+A separate [Jev/Laya decision quality study](artifacts/decision_study/REPORT.md)
+now contains two real-weight CPU rounds, per-case logits, frozen protocols, and
+a loadable AG News calibration map. The first calibration round regressed.
+The second round preserves 93.75% accuracy on a fresh 512-case custom holdout,
+reduces NLL from 0.1803 to 0.1746 and ECE from 0.0334 to 0.0235, while Brier
+slightly worsens. This is task-specific probability calibration, not SOTA.
+Jev has no measured result because the API credential is unavailable.
+
 ## Main result
 
 The completed H20 x16 experiments show that transport and topology dominate the
@@ -43,7 +56,7 @@ equal quality.
 
 ## Reproducibility boundaries
 
-These are infrastructure experiments, not a model-quality paper. The completed
+The original training experiments are infrastructure measurements, not a model-quality paper. The separate decision study states its own held-out calibration scope. The completed
 training timing cases use two repetitions and the generation/training pipeline
 uses one observation per case. Local SGD was not evaluated to a fixed quality
 threshold. The Qwen3.8 measurements use the shared Transformers-compatible

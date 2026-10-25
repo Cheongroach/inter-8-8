@@ -1,0 +1,24 @@
+{
+  "unit_tests": {
+    "passed": 13,
+    "failed": 0,
+    "scope": "numerical metrics and Jev response contracts; not model quality"
+  },
+  "round1_records": 512,
+  "round2_records": 2048,
+  "old_test_not_reused": true,
+  "protocol_source_hashes_match": true,
+  "finite_logits": true,
+  "prepared_data_repeat_export_identical": true,
+  "runtime_parity": {
+    "rows": 8,
+    "max_abs_probability_difference": 4.688749608474968e-05,
+    "choices_identical": true,
+    "tolerance": 0.00011,
+    "passed": true,
+    "scope": "runtime serialization/parity replay of already measured inputs; not new quality evidence",
+    "temperature_loaded": 1.582823071997706,
+    "checkpoint_verified": true
+  },
+  "jev_api_calls": 0
+}

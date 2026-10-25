@@ -1,0 +1,8 @@
+{
+  "checkpoint_sha256": "891102d372688fc2a094dac56a384bc537b87c63f21f9f3dac0be2b7cbc8d86c",
+  "task": "English AG News topic classification with the exact four candidate names/descriptions in PROTOCOL.md",
+  "application": "Use a separate domain-specific Agent; do not apply this map to unrelated choice tasks",
+  "selection": "round2 validation only",
+  "test_cases": 512,
+  "encoder_weights_changed": false
+}

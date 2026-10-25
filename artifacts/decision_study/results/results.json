@@ -1,0 +1,180 @@
+{
+  "selected_on_validation_only": "affine_1.0",
+  "selected_parameters": {
+    "penalty": 1.0,
+    "weight": [
+      [
+        0.9705333203077101,
+        0.0027126685439402528,
+        0.01122940524673043,
+        0.015524605921762495
+      ],
+      [
+        0.027115490851227338,
+        1.0105291073248448,
+        -0.022711955507722523,
+        -0.014932642673945501
+      ],
+      [
+        -0.015451639568795394,
+        -0.00583045353030376,
+        1.0201747265909993,
+        0.0011073665284671308
+      ],
+      [
+        0.01780282841730187,
+        -0.007411322351897063,
+        -0.008692176299354622,
+        0.9983006702416185
+      ]
+    ],
+    "bias": [
+      -0.012752979048750245,
+      0.00235235750505371,
+      0.006084222422287043,
+      0.004316399122486609
+    ]
+  },
+  "selection_metrics": {
+    "shipped": {
+      "n": 128,
+      "accuracy": 0.9765625,
+      "nll": 0.1287895324027229,
+      "brier_multiclass_sum": 0.04704264993888711,
+      "ece_15": 0.04064024904048884,
+      "mean_confidence": 0.9375431751701903
+    },
+    "temperature": {
+      "n": 128,
+      "accuracy": 0.9765625,
+      "nll": 0.12239093089677636,
+      "brier_multiclass_sum": 0.04297526344620232,
+      "ece_15": 0.021111965523445075,
+      "mean_confidence": 0.9849359744245143
+    },
+    "affine_0.01": {
+      "n": 128,
+      "accuracy": 0.9765625,
+      "nll": 0.1532062027119666,
+      "brier_multiclass_sum": 0.041619238750821866,
+      "ece_15": 0.014308359168973427,
+      "mean_confidence": 0.9876550592598003
+    },
+    "affine_0.1": {
+      "n": 128,
+      "accuracy": 0.9765625,
+      "nll": 0.12382657545043402,
+      "brier_multiclass_sum": 0.041091727096578476,
+      "ece_15": 0.016686034671121903,
+      "mean_confidence": 0.9859128818077896
+    },
+    "affine_1.0": {
+      "n": 128,
+      "accuracy": 0.9765625,
+      "nll": 0.12053230079791258,
+      "brier_multiclass_sum": 0.04252510511106901,
+      "ece_15": 0.017016352641147498,
+      "mean_confidence": 0.9850755090915067
+    },
+    "ensemble_shipped": {
+      "n": 128,
+      "accuracy": 0.9765625,
+      "nll": 0.12925551167541224,
+      "brier_multiclass_sum": 0.04804708245357364,
+      "ece_15": 0.04213254519471091,
+      "mean_confidence": 0.9395210590680513
+    },
+    "ensemble_temperature": {
+      "n": 128,
+      "accuracy": 0.9765625,
+      "nll": 0.12737224465299804,
+      "brier_multiclass_sum": 0.04383023678338148,
+      "ece_15": 0.02120423115098217,
+      "mean_confidence": 0.9837053994478661
+    }
+  },
+  "test_metrics": {
+    "shipped": {
+      "n": 256,
+      "accuracy": 0.93359375,
+      "nll": 0.21173776079382825,
+      "brier_multiclass_sum": 0.10383623636188702,
+      "ece_15": 0.02357492574523668,
+      "mean_confidence": 0.9258418349890749
+    },
+    "temperature": {
+      "n": 256,
+      "accuracy": 0.93359375,
+      "nll": 0.2541476183502217,
+      "brier_multiclass_sum": 0.11001422969340038,
+      "ece_15": 0.04965708180273072,
+      "mean_confidence": 0.9766263689432958
+    },
+    "affine_0.01": {
+      "n": 256,
+      "accuracy": 0.93359375,
+      "nll": 0.31321525374599435,
+      "brier_multiclass_sum": 0.12250472089520692,
+      "ece_15": 0.058215023870509676,
+      "mean_confidence": 0.9821347461529267
+    },
+    "affine_0.1": {
+      "n": 256,
+      "accuracy": 0.9375,
+      "nll": 0.27453562553363675,
+      "brier_multiclass_sum": 0.11777415980479088,
+      "ece_15": 0.05775417158663529,
+      "mean_confidence": 0.9787766499493666
+    },
+    "affine_1.0": {
+      "n": 256,
+      "accuracy": 0.9375,
+      "nll": 0.25684229879998605,
+      "brier_multiclass_sum": 0.11145844689347786,
+      "ece_15": 0.05011684321742424,
+      "mean_confidence": 0.9765860865126741
+    },
+    "ensemble_shipped": {
+      "n": 256,
+      "accuracy": 0.94140625,
+      "nll": 0.2107157991832612,
+      "brier_multiclass_sum": 0.10222426961601531,
+      "ece_15": 0.024618339605339344,
+      "mean_confidence": 0.9279087226683085
+    },
+    "ensemble_temperature": {
+      "n": 256,
+      "accuracy": 0.94140625,
+      "nll": 0.2527007511701835,
+      "brier_multiclass_sum": 0.10656670442194473,
+      "ece_15": 0.047031400437966095,
+      "mean_confidence": 0.9774098094361294
+    }
+  },
+  "test_paired_selected_vs_shipped": {
+    "delta": 0.00390625,
+    "wins": 2,
+    "losses": 1,
+    "ci95": [
+      -0.0078125,
+      0.015625
+    ],
+    "method": "paired case bootstrap; exact-text duplicates removed",
+    "seed": 20261025,
+    "draws": 2000
+  },
+  "test_order_flip_rate_rotation_0_vs_2": 0.0078125,
+  "selection_rule": "validation accuracy, NLL, fewer forwards, name",
+  "test_arm_scope": "all preregistered arms disclosed; test never selects a winner",
+  "upstream_training_overlap": "AG News is listed as in-training upstream; not an OOD claim",
+  "torch": "2.9.1",
+  "laya": "0.4.15",
+  "model_load_seconds": 7.297646909020841,
+  "rotation_seconds": [
+    89.22564896568656,
+    92.10533134359866,
+    84.13045637868345,
+    76.38509116787463
+  ],
+  "timing_scope": "CPU eager batched inference; excludes load; no hardware SOTA claim"
+}

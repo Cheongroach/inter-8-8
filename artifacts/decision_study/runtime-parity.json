@@ -1,0 +1,10 @@
+{
+  "rows": 8,
+  "max_abs_probability_difference": 4.688749608474968e-05,
+  "choices_identical": true,
+  "tolerance": 0.00011,
+  "passed": true,
+  "scope": "runtime serialization/parity replay of already measured inputs; not new quality evidence",
+  "temperature_loaded": 1.582823071997706,
+  "checkpoint_verified": true
+}
