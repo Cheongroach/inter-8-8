@@ -1,0 +1,164 @@
+{
+  "selected_on_validation_only": "supervised",
+  "test_metrics": {
+    "laya_default": {
+      "n": 3072,
+      "accuracy": 0.4508463541666667,
+      "nll": 4.337923174227921,
+      "brier_multiclass_sum": 0.8831747686858185,
+      "ece_15": 0.3537310912174223,
+      "mean_confidence": 0.7968756166319727
+    },
+    "laya_wide": {
+      "n": 3072,
+      "accuracy": 0.5699869791666666,
+      "nll": 3.2423148515724676,
+      "brier_multiclass_sum": 0.7076757527254159,
+      "ece_15": 0.27430484513098624,
+      "mean_confidence": 0.8410877540473326
+    },
+    "supervised": {
+      "n": 3072,
+      "accuracy": 0.9166666666666666,
+      "nll": 0.44384637860547294,
+      "brier_multiclass_sum": 0.16394683021717285,
+      "ece_15": 0.15502739099799637,
+      "mean_confidence": 0.76167034340219
+    },
+    "laya_top10": {
+      "n": 3072,
+      "accuracy": 0.6725260416666666,
+      "nll": 1.3473863950547822,
+      "brier_multiclass_sum": 0.48907185384115714,
+      "ece_15": 0.14139810405869052,
+      "mean_confidence": 0.8137923231782068
+    },
+    "fusion_0.25": {
+      "n": 3072,
+      "accuracy": 0.9156901041666666,
+      "nll": 0.37751659215788863,
+      "brier_multiclass_sum": 0.13163664864101682,
+      "ece_15": 0.04620090986150743,
+      "mean_confidence": 0.8705971031089389
+    },
+    "fusion_1": {
+      "n": 3072,
+      "accuracy": 0.8359375,
+      "nll": 0.6880986238288141,
+      "brier_multiclass_sum": 0.2524734899561651,
+      "ece_15": 0.08280959074628119,
+      "mean_confidence": 0.9174552562036151
+    },
+    "lexical": {
+      "n": 3072,
+      "accuracy": 0.908203125,
+      "nll": 0.4145056172255786,
+      "brier_multiclass_sum": 0.1563874392903841,
+      "ece_15": 0.1025696687553628,
+      "mean_confidence": 0.8056645910527216
+    },
+    "dense": {
+      "n": 3072,
+      "accuracy": 0.82421875,
+      "nll": 0.7609925227835813,
+      "brier_multiclass_sum": 0.2922250637176213,
+      "ece_15": 0.1519376393006609,
+      "mean_confidence": 0.6726392776077846
+    }
+  },
+  "selected_vs_default": {
+    "delta": 0.4658203125,
+    "wins": 1481,
+    "losses": 50,
+    "ci95": [
+      0.447265625,
+      0.48438313802083327
+    ],
+    "method": "paired case bootstrap; exact-text duplicates removed",
+    "seed": 20261025,
+    "draws": 2000
+  },
+  "selected_vs_lexical": {
+    "delta": 0.008463541666666666,
+    "wins": 44,
+    "losses": 18,
+    "ci95": [
+      0.0035807291666666665,
+      0.013346354166666666
+    ],
+    "method": "paired case bootstrap; exact-text duplicates removed",
+    "seed": 20261025,
+    "draws": 2000
+  },
+  "selected_vs_supervised": {
+    "delta": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "method": "paired case bootstrap; exact-text duplicates removed",
+    "seed": 20261025,
+    "draws": 2000
+  },
+  "diagnostics": {
+    "shortlist_recall": 0.9970703125,
+    "decision_timings": {
+      "default": 1687.894250612706,
+      "wide": 1285.124773915857,
+      "top10": 256.48575666733086
+    },
+    "usage_first_row": {
+      "default": {
+        "state": {
+          "state_tokens": 12,
+          "state_tokens_used": 12,
+          "state_tokens_dropped": 0,
+          "truncated": false
+        },
+        "options": {
+          "options": 77,
+          "options_distinct": 73,
+          "tokens_per_option": 4
+        },
+        "input_tokens": 313
+      },
+      "wide": {
+        "state": {
+          "state_tokens": 12,
+          "state_tokens_used": 12,
+          "state_tokens_dropped": 0,
+          "truncated": false
+        },
+        "options": {
+          "options": 77,
+          "options_distinct": 77,
+          "tokens_per_option": null
+        },
+        "input_tokens": 370
+      },
+      "top10": {
+        "state": {
+          "state_tokens": 12,
+          "state_tokens_used": 12,
+          "state_tokens_dropped": 0,
+          "truncated": false
+        },
+        "options": {
+          "options": 10,
+          "options_distinct": 10,
+          "tokens_per_option": null
+        },
+        "input_tokens": 68
+      }
+    },
+    "truncated_rows": {
+      "default": 0,
+      "wide": 0,
+      "top10": 0
+    }
+  },
+  "selection_sha256": "bf1909d5386f70b39f45739a63458d8f6cf0870f17b345a9ebcaf7511c9590b1",
+  "scope": "Target-supervised Banking77 fixed-schema study; not a Jev comparison or SOTA claim"
+}

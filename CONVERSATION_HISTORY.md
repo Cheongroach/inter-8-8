@@ -94,3 +94,25 @@ was confirmed. Two separate AG News calibration rounds were completed with
 real Laya weights; the negative first round is retained. A fresh 512-case
 holdout supports the second round's NLL improvement, with unchanged accuracy
 and slightly worse Brier. Jev remains unmeasured. No SOTA claim is made.
+
+The user requested continued improvement and resumed after an interruption.
+A third round moved to supervised Banking77 routing rather than more news
+calibration. The official source was pinned and deduplicated before fitting;
+the test set remained separate until validation selection was written.
+Lexical, frozen-encoder, wider candidate-budget, shortlist, and prior-fusion
+controls were completed.
+
+The selected 75% lexical / 25% frozen-Laya probability blend reached 91.67%
+accuracy on 3,072 held-out examples, improving on the 90.82% lexical baseline
+by 0.85 points (paired 95% interval [0.36, 1.33]). Its calibration metrics
+worsened versus that baseline. Direct Laya reranking regressed despite
+99.71% top-10 candidate recall. The original Laya encoder and typed head
+were not fine-tuned; the new linear heads and runtime loader are included.
+
+An initial internal forward call failed before validation predictions because
+it lacked the inference context supplied by the public API. The corrected
+runner restored saved heads, reproduced their validation metrics, and kept the
+original protocol/code snapshot. All eight test metrics were recomputed from
+case probabilities; 16-case public API replay matched every choice, with
+maximum probability discrepancy below 3.3e-6. These replay cases do not add
+independent quality evidence. Jev and SOTA comparisons remain unresolved.

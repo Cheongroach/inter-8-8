@@ -1,0 +1,11 @@
+{
+  "original_protocol_sha256": "1d3e39c7d4a2adb07c35a6009dcce98c9249f3268a7bf70266dcc483254dedea",
+  "current_implementation_sha256": {
+    "banking77.py": "1958ba0aebf3e1378b755e33f7b873af98be89a22e2984d88ecf1acb39d56c85",
+    "metrics.py": "9cc1c8ce84fa282fafd82a512ad24a7e089066477f241636be91e9c0a55b688f",
+    "PROTOCOL_ROUND3.md": "5b63d55b4c7cb6908a54906181572948b67f5528c4aeaa6f8d23a2ac4b0877b5"
+  },
+  "reason": "Internal _forward requires the inference_mode context supplied by the public API",
+  "stage": "Heads complete; zero validation/test decision rows",
+  "unchanged": "Data, fitting results, candidate grid, and selection rule"
+}

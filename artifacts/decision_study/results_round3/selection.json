@@ -1,0 +1,156 @@
+{
+  "selected": "supervised",
+  "lexical": "lexical_C16",
+  "dense": "dense_C100",
+  "dense_weight": 0.25,
+  "mix_scores": {
+    "0": {
+      "n": 770,
+      "accuracy": 0.9090909090909091,
+      "nll": 0.4255239461587504,
+      "brier_multiclass_sum": 0.15735912151485934,
+      "ece_15": 0.11415520996966495,
+      "mean_confidence": 0.7950822902495407
+    },
+    "0.25": {
+      "n": 770,
+      "accuracy": 0.9181818181818182,
+      "nll": 0.4673204696785254,
+      "brier_multiclass_sum": 0.1674983050798705,
+      "ece_15": 0.16795890291820625,
+      "mean_confidence": 0.7503948261374425
+    },
+    "0.5": {
+      "n": 770,
+      "accuracy": 0.9155844155844156,
+      "nll": 0.5323921454899316,
+      "brier_multiclass_sum": 0.19588504507913737,
+      "ece_15": 0.20700069894706785,
+      "mean_confidence": 0.7105255835827059
+    },
+    "0.75": {
+      "n": 770,
+      "accuracy": 0.8857142857142857,
+      "nll": 0.6292350246283296,
+      "brier_multiclass_sum": 0.24251934151265983,
+      "ece_15": 0.20830916131219296,
+      "mean_confidence": 0.6774051244020927
+    },
+    "1": {
+      "n": 770,
+      "accuracy": 0.8142857142857143,
+      "nll": 0.8276609125471898,
+      "brier_multiclass_sum": 0.3074011943804379,
+      "ece_15": 0.15852235845345908,
+      "mean_confidence": 0.6557633558322552
+    }
+  },
+  "validation": {
+    "laya_default": {
+      "n": 770,
+      "accuracy": 0.41818181818181815,
+      "nll": 4.535507997051014,
+      "brier_multiclass_sum": 0.9246204480336735,
+      "ece_15": 0.3762053795150978,
+      "mean_confidence": 0.7880481740241501
+    },
+    "laya_wide": {
+      "n": 770,
+      "accuracy": 0.5545454545454546,
+      "nll": 3.553404710108492,
+      "brier_multiclass_sum": 0.7348712658801401,
+      "ece_15": 0.285252400687858,
+      "mean_confidence": 0.8379838762828509
+    },
+    "supervised": {
+      "n": 770,
+      "accuracy": 0.9181818181818182,
+      "nll": 0.4673204696785254,
+      "brier_multiclass_sum": 0.1674983050798705,
+      "ece_15": 0.16795890291820625,
+      "mean_confidence": 0.7503948261374425
+    },
+    "laya_top10": {
+      "n": 770,
+      "accuracy": 0.6558441558441559,
+      "nll": 1.6377143592274936,
+      "brier_multiclass_sum": 0.5286848781039103,
+      "ece_15": 0.1625677230981462,
+      "mean_confidence": 0.8021860455596277
+    },
+    "fusion_0.25": {
+      "n": 770,
+      "accuracy": 0.9025974025974026,
+      "nll": 0.5426401182870529,
+      "brier_multiclass_sum": 0.13952275339466214,
+      "ece_15": 0.055930075739402736,
+      "mean_confidence": 0.8571191147156947
+    },
+    "fusion_1": {
+      "n": 770,
+      "accuracy": 0.8142857142857143,
+      "nll": 0.9133866243292884,
+      "brier_multiclass_sum": 0.2833755585564447,
+      "ece_15": 0.09753367009683195,
+      "mean_confidence": 0.9098952612020428
+    }
+  },
+  "diagnostics": {
+    "shortlist_recall": 0.990909090909091,
+    "decision_timings": {
+      "default": 308.324066397734,
+      "wide": 495.61569801717997,
+      "top10": 277.5837932918221
+    },
+    "usage_first_row": {
+      "default": {
+        "state": {
+          "state_tokens": 14,
+          "state_tokens_used": 14,
+          "state_tokens_dropped": 0,
+          "truncated": false
+        },
+        "options": {
+          "options": 77,
+          "options_distinct": 73,
+          "tokens_per_option": 4
+        },
+        "input_tokens": 315
+      },
+      "wide": {
+        "state": {
+          "state_tokens": 14,
+          "state_tokens_used": 14,
+          "state_tokens_dropped": 0,
+          "truncated": false
+        },
+        "options": {
+          "options": 77,
+          "options_distinct": 77,
+          "tokens_per_option": null
+        },
+        "input_tokens": 372
+      },
+      "top10": {
+        "state": {
+          "state_tokens": 14,
+          "state_tokens_used": 14,
+          "state_tokens_dropped": 0,
+          "truncated": false
+        },
+        "options": {
+          "options": 10,
+          "options_distinct": 10,
+          "tokens_per_option": null
+        },
+        "input_tokens": 88
+      }
+    },
+    "truncated_rows": {
+      "default": 0,
+      "wide": 0,
+      "top10": 0
+    }
+  },
+  "no_test_metrics_computed": true
+}

@@ -1,0 +1,52 @@
+{
+  "selected": "dense_C100",
+  "scores": {
+    "dense_C1": {
+      "n": 770,
+      "accuracy": 0.43896103896103894,
+      "nll": 3.2504507836576173,
+      "brier_multiclass_sum": 0.9180147570379042,
+      "ece_15": 0.3736559909087449,
+      "mean_confidence": 0.06530504805229416
+    },
+    "dense_C10": {
+      "n": 770,
+      "accuracy": 0.7194805194805195,
+      "nll": 1.6001063589086226,
+      "brier_multiclass_sum": 0.5716912625123073,
+      "ece_15": 0.37771373674912,
+      "mean_confidence": 0.34176678273139943
+    },
+    "dense_C100": {
+      "n": 770,
+      "accuracy": 0.8142857142857143,
+      "nll": 0.8276609125471898,
+      "brier_multiclass_sum": 0.3074011943804379,
+      "ece_15": 0.15852235845345908,
+      "mean_confidence": 0.6557633558322552
+    }
+  },
+  "training": {
+    "dense_C1": {
+      "seconds": 2.1693748449906707,
+      "iterations": [
+        40
+      ],
+      "warnings": []
+    },
+    "dense_C10": {
+      "seconds": 8.060235174372792,
+      "iterations": [
+        130
+      ],
+      "warnings": []
+    },
+    "dense_C100": {
+      "seconds": 14.104042786173522,
+      "iterations": [
+        216
+      ],
+      "warnings": []
+    }
+  }
+}

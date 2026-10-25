@@ -14,12 +14,25 @@ Both missing sixteen-card experiment arms are now stopped and will not be
 restarted. The original three-arm training comparison remains incomplete.
 
 A separate [Jev/Laya decision quality study](artifacts/decision_study/REPORT.md)
-now contains two real-weight CPU rounds, per-case logits, frozen protocols, and
-a loadable AG News calibration map. The first calibration round regressed.
+now contains three real-weight CPU rounds, per-case logits, frozen protocols,
+an AG News calibration map, and loadable Banking77 domain heads.
+The first calibration round regressed.
 The second round preserves 93.75% accuracy on a fresh 512-case custom holdout,
 reduces NLL from 0.1803 to 0.1746 and ECE from 0.0334 to 0.0235, while Brier
 slightly worsens. This is task-specific probability calibration, not SOTA.
 Jev has no measured result because the API credential is unavailable.
+
+The [third round](artifacts/decision_study/REPORT_BANKING77.md) uses 9,229
+domain training examples, 770 validation examples, and 3,072 deduplicated
+held-out Banking77 examples. The validation-selected blend of a lexical
+classifier (75%) and a frozen Laya encoder classifier (25%) reaches 91.67%
+accuracy, versus 90.82% for the lexical baseline; paired improvement is
+0.85 percentage points, with a 95% interval of [0.36, 1.33]. NLL, Brier,
+and ECE worsen versus the lexical baseline. Pure Laya reranking regresses.
+The original encoder and typed decision head are unchanged. This is
+supervised fixed-schema adaptation, with no SOTA or zero-shot parity claim.
+[Reproduction and runtime instructions](artifacts/decision_study/BANKING77_REPRODUCE.md)
+describe the saved heads and candidate mapping.
 
 ## Main result
 
@@ -63,7 +76,7 @@ threshold. The Qwen3.8 measurements use the shared Transformers-compatible
 Qwen3.5 implementation and still require formal output/gradient parity against
 the official reference before being used for a quality claim.
 
-Model weights are not committed. Immutable revisions and SHA256 manifests are
+Full foundation-model weights are not committed; the small domain classifier
+heads and vectorizer parameters are included. Immutable revisions and SHA256 manifests are
 under `artifacts/experiment-assets-manifest.json` and
 `artifacts/16card-experiments/new-model-manifest.json`.
-

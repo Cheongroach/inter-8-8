@@ -10,6 +10,8 @@
 - Research, plans, comparison reports, conclusions, and the final paper-style
   report.
 - A curated history of user-visible requests and engineering decisions.
+- Banking77's CC BY 4.0 source files and attribution, domain classifier
+  parameters, frozen-protocol predictions, and runtime parity records.
 
 ## Sanitized
 

@@ -1,0 +1,8 @@
+{
+  "architecture": "x86_64",
+  "processor_model": "INTEL(R) XEON(R) PLATINUM 8582C",
+  "logical_cpus_visible": 240,
+  "experiment_threads": 8,
+  "isolation": "Shared development host; no exclusive CPU allocation or serving load test",
+  "gpu_used": false
+}

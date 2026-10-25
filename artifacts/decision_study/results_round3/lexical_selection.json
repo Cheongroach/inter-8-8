@@ -1,0 +1,52 @@
+{
+  "selected": "lexical_C16",
+  "scores": {
+    "lexical_C1": {
+      "n": 770,
+      "accuracy": 0.8831168831168831,
+      "nll": 1.0727373202517578,
+      "brier_multiclass_sum": 0.3887409491829766,
+      "ece_15": 0.4211293863654423,
+      "mean_confidence": 0.4619874967514408
+    },
+    "lexical_C4": {
+      "n": 770,
+      "accuracy": 0.9077922077922078,
+      "nll": 0.6099881810792082,
+      "brier_multiclass_sum": 0.21811004721562513,
+      "ece_15": 0.2273881405140236,
+      "mean_confidence": 0.6804040672781843
+    },
+    "lexical_C16": {
+      "n": 770,
+      "accuracy": 0.9090909090909091,
+      "nll": 0.4255239461587504,
+      "brier_multiclass_sum": 0.15735912151485934,
+      "ece_15": 0.11415520996966495,
+      "mean_confidence": 0.7950822902495407
+    }
+  },
+  "training": {
+    "lexical_C1": {
+      "seconds": 13.570763281546533,
+      "iterations": [
+        38
+      ],
+      "warnings": []
+    },
+    "lexical_C4": {
+      "seconds": 15.059604895301163,
+      "iterations": [
+        42
+      ],
+      "warnings": []
+    },
+    "lexical_C16": {
+      "seconds": 23.253216164186597,
+      "iterations": [
+        59
+      ],
+      "warnings": []
+    }
+  }
+}

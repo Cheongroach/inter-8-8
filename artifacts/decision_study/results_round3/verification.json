@@ -1,0 +1,64 @@
+{
+  "metric_recomputation": true,
+  "checked_methods": [
+    "laya_default",
+    "laya_wide",
+    "supervised",
+    "laya_top10",
+    "fusion_0.25",
+    "fusion_1",
+    "lexical",
+    "dense"
+  ],
+  "test_ids_and_selection_lock_verified": true,
+  "frozen_implementation_verified": true,
+  "replay_rows": 16,
+  "replay_ids": [
+    "test:0",
+    "test:204",
+    "test:409",
+    "test:615",
+    "test:819",
+    "test:1026",
+    "test:1231",
+    "test:1437",
+    "test:1643",
+    "test:1848",
+    "test:2053",
+    "test:2259",
+    "test:2463",
+    "test:2668",
+    "test:2873",
+    "test:3079"
+  ],
+  "selected": "supervised",
+  "runtime_replay": {
+    "supervised": {
+      "choices_match": true,
+      "max_probability_error": 6.155458091017252e-07
+    },
+    "laya_default": {
+      "choices_match": true,
+      "max_probability_error": 2.3737230253062513e-06
+    },
+    "laya_wide": {
+      "choices_match": true,
+      "max_probability_error": 3.2806632531690028e-06
+    },
+    "laya_top10": {
+      "choices_match": true,
+      "max_probability_error": 1.2281531556190828e-06
+    }
+  },
+  "actual_runtime_temperatures": {
+    "choice:3-5": 1.7601518630981445,
+    "choice:6-10": 1.0000158548355103,
+    "score:3-5": 1.2514300346374512,
+    "noul:2": 1.983399510383606,
+    "choice:11+": 0.5,
+    "choice:2": 1.9063563346862793
+  },
+  "scope": "Artifact/runtime parity only; replay is not additional held-out evidence",
+  "verifier_sha256": "e844c0dc93421098ce59dec199b517685e1afa4d20fe6b395667b41cdbc3b605",
+  "runtime_sha256": "1e14a8f08b43909fdfb99e59483444f4ee508c4d491c26fc634d558060f27a88"
+}

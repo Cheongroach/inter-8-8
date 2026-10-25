@@ -1,0 +1,952 @@
+[
+  {
+    "gold": "balance_not_updated_after_bank_transfer",
+    "predicted": "transfer_not_received_by_recipient",
+    "count": 5
+  },
+  {
+    "gold": "fiat_currency_support",
+    "predicted": "exchange_via_app",
+    "count": 4
+  },
+  {
+    "gold": "pending_top_up",
+    "predicted": "top_up_failed",
+    "count": 4
+  },
+  {
+    "gold": "change_pin",
+    "predicted": "get_physical_card",
+    "count": 4
+  },
+  {
+    "gold": "virtual_card_not_working",
+    "predicted": "get_disposable_virtual_card",
+    "count": 4
+  },
+  {
+    "gold": "top_up_failed",
+    "predicted": "top_up_reverted",
+    "count": 4
+  },
+  {
+    "gold": "transfer_not_received_by_recipient",
+    "predicted": "balance_not_updated_after_bank_transfer",
+    "count": 3
+  },
+  {
+    "gold": "top_up_reverted",
+    "predicted": "top_up_failed",
+    "count": 3
+  },
+  {
+    "gold": "unable_to_verify_identity",
+    "predicted": "verify_my_identity",
+    "count": 3
+  },
+  {
+    "gold": "disposable_card_limits",
+    "predicted": "getting_virtual_card",
+    "count": 3
+  },
+  {
+    "gold": "pending_transfer",
+    "predicted": "balance_not_updated_after_bank_transfer",
+    "count": 3
+  },
+  {
+    "gold": "pending_transfer",
+    "predicted": "failed_transfer",
+    "count": 3
+  },
+  {
+    "gold": "pending_transfer",
+    "predicted": "transfer_timing",
+    "count": 3
+  },
+  {
+    "gold": "transfer_timing",
+    "predicted": "balance_not_updated_after_bank_transfer",
+    "count": 3
+  },
+  {
+    "gold": "virtual_card_not_working",
+    "predicted": "card_not_working",
+    "count": 3
+  },
+  {
+    "gold": "balance_not_updated_after_bank_transfer",
+    "predicted": "pending_transfer",
+    "count": 3
+  },
+  {
+    "gold": "verify_my_identity",
+    "predicted": "why_verify_identity",
+    "count": 3
+  },
+  {
+    "gold": "card_arrival",
+    "predicted": "card_delivery_estimate",
+    "count": 2
+  },
+  {
+    "gold": "extra_charge_on_statement",
+    "predicted": "verify_source_of_funds",
+    "count": 2
+  },
+  {
+    "gold": "pending_cash_withdrawal",
+    "predicted": "cash_withdrawal_charge",
+    "count": 2
+  },
+  {
+    "gold": "fiat_currency_support",
+    "predicted": "supported_cards_and_currencies",
+    "count": 2
+  },
+  {
+    "gold": "pin_blocked",
+    "predicted": "get_physical_card",
+    "count": 2
+  },
+  {
+    "gold": "pin_blocked",
+    "predicted": "card_not_working",
+    "count": 2
+  },
+  {
+    "gold": "wrong_amount_of_cash_received",
+    "predicted": "cash_withdrawal_not_recognised",
+    "count": 2
+  },
+  {
+    "gold": "wrong_amount_of_cash_received",
+    "predicted": "declined_cash_withdrawal",
+    "count": 2
+  },
+  {
+    "gold": "transfer_not_received_by_recipient",
+    "predicted": "failed_transfer",
+    "count": 2
+  },
+  {
+    "gold": "card_acceptance",
+    "predicted": "card_not_working",
+    "count": 2
+  },
+  {
+    "gold": "card_payment_not_recognised",
+    "predicted": "compromised_card",
+    "count": 2
+  },
+  {
+    "gold": "why_verify_identity",
+    "predicted": "unable_to_verify_identity",
+    "count": 2
+  },
+  {
+    "gold": "why_verify_identity",
+    "predicted": "verify_my_identity",
+    "count": 2
+  },
+  {
+    "gold": "unable_to_verify_identity",
+    "predicted": "why_verify_identity",
+    "count": 2
+  },
+  {
+    "gold": "disposable_card_limits",
+    "predicted": "get_disposable_virtual_card",
+    "count": 2
+  },
+  {
+    "gold": "direct_debit_payment_not_recognised",
+    "predicted": "extra_charge_on_statement",
+    "count": 2
+  },
+  {
+    "gold": "card_swallowed",
+    "predicted": "declined_cash_withdrawal",
+    "count": 2
+  },
+  {
+    "gold": "transfer_timing",
+    "predicted": "pending_transfer",
+    "count": 2
+  },
+  {
+    "gold": "beneficiary_not_allowed",
+    "predicted": "failed_transfer",
+    "count": 2
+  },
+  {
+    "gold": "order_physical_card",
+    "predicted": "card_acceptance",
+    "count": 2
+  },
+  {
+    "gold": "virtual_card_not_working",
+    "predicted": "declined_card_payment",
+    "count": 2
+  },
+  {
+    "gold": "wrong_exchange_rate_for_cash_withdrawal",
+    "predicted": "card_payment_wrong_exchange_rate",
+    "count": 2
+  },
+  {
+    "gold": "get_disposable_virtual_card",
+    "predicted": "getting_virtual_card",
+    "count": 2
+  },
+  {
+    "gold": "top_up_failed",
+    "predicted": "declined_card_payment",
+    "count": 2
+  },
+  {
+    "gold": "exchange_charge",
+    "predicted": "exchange_rate",
+    "count": 2
+  },
+  {
+    "gold": "card_arrival",
+    "predicted": "get_physical_card",
+    "count": 1
+  },
+  {
+    "gold": "card_linking",
+    "predicted": "getting_spare_card",
+    "count": 1
+  },
+  {
+    "gold": "exchange_rate",
+    "predicted": "exchange_charge",
+    "count": 1
+  },
+  {
+    "gold": "card_payment_wrong_exchange_rate",
+    "predicted": "transaction_charged_twice",
+    "count": 1
+  },
+  {
+    "gold": "card_payment_wrong_exchange_rate",
+    "predicted": "wrong_exchange_rate_for_cash_withdrawal",
+    "count": 1
+  },
+  {
+    "gold": "extra_charge_on_statement",
+    "predicted": "card_payment_not_recognised",
+    "count": 1
+  },
+  {
+    "gold": "extra_charge_on_statement",
+    "predicted": "transfer_not_received_by_recipient",
+    "count": 1
+  },
+  {
+    "gold": "extra_charge_on_statement",
+    "predicted": "reverted_card_payment?",
+    "count": 1
+  },
+  {
+    "gold": "pending_cash_withdrawal",
+    "predicted": "pending_top_up",
+    "count": 1
+  },
+  {
+    "gold": "pending_cash_withdrawal",
+    "predicted": "cash_withdrawal_not_recognised",
+    "count": 1
+  },
+  {
+    "gold": "pending_cash_withdrawal",
+    "predicted": "pending_transfer",
+    "count": 1
+  },
+  {
+    "gold": "fiat_currency_support",
+    "predicted": "pending_card_payment",
+    "count": 1
+  },
+  {
+    "gold": "fiat_currency_support",
+    "predicted": "exchange_charge",
+    "count": 1
+  },
+  {
+    "gold": "fiat_currency_support",
+    "predicted": "country_support",
+    "count": 1
+  },
+  {
+    "gold": "card_delivery_estimate",
+    "predicted": "declined_card_payment",
+    "count": 1
+  },
+  {
+    "gold": "card_delivery_estimate",
+    "predicted": "country_support",
+    "count": 1
+  },
+  {
+    "gold": "card_delivery_estimate",
+    "predicted": "card_arrival",
+    "count": 1
+  },
+  {
+    "gold": "automatic_top_up",
+    "predicted": "top_up_failed",
+    "count": 1
+  },
+  {
+    "gold": "automatic_top_up",
+    "predicted": "balance_not_updated_after_bank_transfer",
+    "count": 1
+  },
+  {
+    "gold": "card_not_working",
+    "predicted": "unable_to_verify_identity",
+    "count": 1
+  },
+  {
+    "gold": "card_not_working",
+    "predicted": "pin_blocked",
+    "count": 1
+  },
+  {
+    "gold": "exchange_via_app",
+    "predicted": "exchange_charge",
+    "count": 1
+  },
+  {
+    "gold": "exchange_via_app",
+    "predicted": "fiat_currency_support",
+    "count": 1
+  },
+  {
+    "gold": "lost_or_stolen_card",
+    "predicted": "transfer_not_received_by_recipient",
+    "count": 1
+  },
+  {
+    "gold": "lost_or_stolen_card",
+    "predicted": "topping_up_by_card",
+    "count": 1
+  },
+  {
+    "gold": "lost_or_stolen_card",
+    "predicted": "card_arrival",
+    "count": 1
+  },
+  {
+    "gold": "pin_blocked",
+    "predicted": "card_swallowed",
+    "count": 1
+  },
+  {
+    "gold": "pin_blocked",
+    "predicted": "card_linking",
+    "count": 1
+  },
+  {
+    "gold": "contactless_not_working",
+    "predicted": "verify_my_identity",
+    "count": 1
+  },
+  {
+    "gold": "contactless_not_working",
+    "predicted": "card_not_working",
+    "count": 1
+  },
+  {
+    "gold": "contactless_not_working",
+    "predicted": "top_up_by_card_charge",
+    "count": 1
+  },
+  {
+    "gold": "contactless_not_working",
+    "predicted": "reverted_card_payment?",
+    "count": 1
+  },
+  {
+    "gold": "top_up_by_bank_transfer_charge",
+    "predicted": "transfer_fee_charged",
+    "count": 1
+  },
+  {
+    "gold": "top_up_by_bank_transfer_charge",
+    "predicted": "top_up_by_card_charge",
+    "count": 1
+  },
+  {
+    "gold": "top_up_by_bank_transfer_charge",
+    "predicted": "pending_transfer",
+    "count": 1
+  },
+  {
+    "gold": "top_up_by_bank_transfer_charge",
+    "predicted": "transfer_into_account",
+    "count": 1
+  },
+  {
+    "gold": "pending_top_up",
+    "predicted": "topping_up_by_card",
+    "count": 1
+  },
+  {
+    "gold": "cancel_transfer",
+    "predicted": "request_refund",
+    "count": 1
+  },
+  {
+    "gold": "cancel_transfer",
+    "predicted": "transfer_not_received_by_recipient",
+    "count": 1
+  },
+  {
+    "gold": "cancel_transfer",
+    "predicted": "card_payment_wrong_exchange_rate",
+    "count": 1
+  },
+  {
+    "gold": "card_payment_fee_charged",
+    "predicted": "cash_withdrawal_not_recognised",
+    "count": 1
+  },
+  {
+    "gold": "card_payment_fee_charged",
+    "predicted": "direct_debit_payment_not_recognised",
+    "count": 1
+  },
+  {
+    "gold": "getting_virtual_card",
+    "predicted": "order_physical_card",
+    "count": 1
+  },
+  {
+    "gold": "getting_virtual_card",
+    "predicted": "card_arrival",
+    "count": 1
+  },
+  {
+    "gold": "card_acceptance",
+    "predicted": "card_arrival",
+    "count": 1
+  },
+  {
+    "gold": "top_up_reverted",
+    "predicted": "pending_top_up",
+    "count": 1
+  },
+  {
+    "gold": "top_up_reverted",
+    "predicted": "request_refund",
+    "count": 1
+  },
+  {
+    "gold": "top_up_reverted",
+    "predicted": "balance_not_updated_after_cheque_or_cash_deposit",
+    "count": 1
+  },
+  {
+    "gold": "balance_not_updated_after_cheque_or_cash_deposit",
+    "predicted": "balance_not_updated_after_bank_transfer",
+    "count": 1
+  },
+  {
+    "gold": "balance_not_updated_after_cheque_or_cash_deposit",
+    "predicted": "top_up_by_cash_or_cheque",
+    "count": 1
+  },
+  {
+    "gold": "card_payment_not_recognised",
+    "predicted": "direct_debit_payment_not_recognised",
+    "count": 1
+  },
+  {
+    "gold": "card_payment_not_recognised",
+    "predicted": "reverted_card_payment?",
+    "count": 1
+  },
+  {
+    "gold": "card_payment_not_recognised",
+    "predicted": "cash_withdrawal_not_recognised",
+    "count": 1
+  },
+  {
+    "gold": "unable_to_verify_identity",
+    "predicted": "beneficiary_not_allowed",
+    "count": 1
+  },
+  {
+    "gold": "get_physical_card",
+    "predicted": "activate_my_card",
+    "count": 1
+  },
+  {
+    "gold": "visa_or_mastercard",
+    "predicted": "card_payment_not_recognised",
+    "count": 1
+  },
+  {
+    "gold": "visa_or_mastercard",
+    "predicted": "getting_spare_card",
+    "count": 1
+  },
+  {
+    "gold": "visa_or_mastercard",
+    "predicted": "supported_cards_and_currencies",
+    "count": 1
+  },
+  {
+    "gold": "topping_up_by_card",
+    "predicted": "balance_not_updated_after_bank_transfer",
+    "count": 1
+  },
+  {
+    "gold": "topping_up_by_card",
+    "predicted": "top_up_limits",
+    "count": 1
+  },
+  {
+    "gold": "topping_up_by_card",
+    "predicted": "receiving_money",
+    "count": 1
+  },
+  {
+    "gold": "topping_up_by_card",
+    "predicted": "transfer_into_account",
+    "count": 1
+  },
+  {
+    "gold": "topping_up_by_card",
+    "predicted": "pending_top_up",
+    "count": 1
+  },
+  {
+    "gold": "disposable_card_limits",
+    "predicted": "getting_spare_card",
+    "count": 1
+  },
+  {
+    "gold": "compromised_card",
+    "predicted": "lost_or_stolen_card",
+    "count": 1
+  },
+  {
+    "gold": "compromised_card",
+    "predicted": "cash_withdrawal_not_recognised",
+    "count": 1
+  },
+  {
+    "gold": "compromised_card",
+    "predicted": "card_linking",
+    "count": 1
+  },
+  {
+    "gold": "compromised_card",
+    "predicted": "terminate_account",
+    "count": 1
+  },
+  {
+    "gold": "atm_support",
+    "predicted": "declined_cash_withdrawal",
+    "count": 1
+  },
+  {
+    "gold": "atm_support",
+    "predicted": "card_acceptance",
+    "count": 1
+  },
+  {
+    "gold": "direct_debit_payment_not_recognised",
+    "predicted": "request_refund",
+    "count": 1
+  },
+  {
+    "gold": "direct_debit_payment_not_recognised",
+    "predicted": "lost_or_stolen_card",
+    "count": 1
+  },
+  {
+    "gold": "direct_debit_payment_not_recognised",
+    "predicted": "terminate_account",
+    "count": 1
+  },
+  {
+    "gold": "direct_debit_payment_not_recognised",
+    "predicted": "cash_withdrawal_not_recognised",
+    "count": 1
+  },
+  {
+    "gold": "declined_cash_withdrawal",
+    "predicted": "card_not_working",
+    "count": 1
+  },
+  {
+    "gold": "declined_cash_withdrawal",
+    "predicted": "declined_card_payment",
+    "count": 1
+  },
+  {
+    "gold": "pending_card_payment",
+    "predicted": "card_payment_not_recognised",
+    "count": 1
+  },
+  {
+    "gold": "pending_card_payment",
+    "predicted": "card_not_working",
+    "count": 1
+  },
+  {
+    "gold": "pending_card_payment",
+    "predicted": "transaction_charged_twice",
+    "count": 1
+  },
+  {
+    "gold": "lost_or_stolen_phone",
+    "predicted": "lost_or_stolen_card",
+    "count": 1
+  },
+  {
+    "gold": "request_refund",
+    "predicted": "card_payment_wrong_exchange_rate",
+    "count": 1
+  },
+  {
+    "gold": "request_refund",
+    "predicted": "terminate_account",
+    "count": 1
+  },
+  {
+    "gold": "declined_transfer",
+    "predicted": "transaction_charged_twice",
+    "count": 1
+  },
+  {
+    "gold": "declined_transfer",
+    "predicted": "transfer_fee_charged",
+    "count": 1
+  },
+  {
+    "gold": "declined_transfer",
+    "predicted": "failed_transfer",
+    "count": 1
+  },
+  {
+    "gold": "declined_transfer",
+    "predicted": "cancel_transfer",
+    "count": 1
+  },
+  {
+    "gold": "declined_transfer",
+    "predicted": "declined_cash_withdrawal",
+    "count": 1
+  },
+  {
+    "gold": "declined_transfer",
+    "predicted": "transfer_into_account",
+    "count": 1
+  },
+  {
+    "gold": "declined_transfer",
+    "predicted": "card_not_working",
+    "count": 1
+  },
+  {
+    "gold": "declined_transfer",
+    "predicted": "declined_card_payment",
+    "count": 1
+  },
+  {
+    "gold": "Refund_not_showing_up",
+    "predicted": "reverted_card_payment?",
+    "count": 1
+  },
+  {
+    "gold": "Refund_not_showing_up",
+    "predicted": "request_refund",
+    "count": 1
+  },
+  {
+    "gold": "declined_card_payment",
+    "predicted": "declined_cash_withdrawal",
+    "count": 1
+  },
+  {
+    "gold": "pending_transfer",
+    "predicted": "pending_card_payment",
+    "count": 1
+  },
+  {
+    "gold": "card_swallowed",
+    "predicted": "card_not_working",
+    "count": 1
+  },
+  {
+    "gold": "transfer_timing",
+    "predicted": "failed_transfer",
+    "count": 1
+  },
+  {
+    "gold": "reverted_card_payment?",
+    "predicted": "declined_card_payment",
+    "count": 1
+  },
+  {
+    "gold": "reverted_card_payment?",
+    "predicted": "card_payment_not_recognised",
+    "count": 1
+  },
+  {
+    "gold": "reverted_card_payment?",
+    "predicted": "card_not_working",
+    "count": 1
+  },
+  {
+    "gold": "beneficiary_not_allowed",
+    "predicted": "pin_blocked",
+    "count": 1
+  },
+  {
+    "gold": "beneficiary_not_allowed",
+    "predicted": "transfer_into_account",
+    "count": 1
+  },
+  {
+    "gold": "beneficiary_not_allowed",
+    "predicted": "balance_not_updated_after_bank_transfer",
+    "count": 1
+  },
+  {
+    "gold": "transfer_fee_charged",
+    "predicted": "top_up_by_bank_transfer_charge",
+    "count": 1
+  },
+  {
+    "gold": "transfer_fee_charged",
+    "predicted": "reverted_card_payment?",
+    "count": 1
+  },
+  {
+    "gold": "transfer_fee_charged",
+    "predicted": "extra_charge_on_statement",
+    "count": 1
+  },
+  {
+    "gold": "receiving_money",
+    "predicted": "exchange_via_app",
+    "count": 1
+  },
+  {
+    "gold": "receiving_money",
+    "predicted": "top_up_by_cash_or_cheque",
+    "count": 1
+  },
+  {
+    "gold": "failed_transfer",
+    "predicted": "balance_not_updated_after_bank_transfer",
+    "count": 1
+  },
+  {
+    "gold": "failed_transfer",
+    "predicted": "top_up_by_bank_transfer_charge",
+    "count": 1
+  },
+  {
+    "gold": "failed_transfer",
+    "predicted": "transfer_into_account",
+    "count": 1
+  },
+  {
+    "gold": "failed_transfer",
+    "predicted": "declined_transfer",
+    "count": 1
+  },
+  {
+    "gold": "transfer_into_account",
+    "predicted": "topping_up_by_card",
+    "count": 1
+  },
+  {
+    "gold": "transfer_into_account",
+    "predicted": "balance_not_updated_after_bank_transfer",
+    "count": 1
+  },
+  {
+    "gold": "transfer_into_account",
+    "predicted": "failed_transfer",
+    "count": 1
+  },
+  {
+    "gold": "getting_spare_card",
+    "predicted": "card_payment_fee_charged",
+    "count": 1
+  },
+  {
+    "gold": "getting_spare_card",
+    "predicted": "getting_virtual_card",
+    "count": 1
+  },
+  {
+    "gold": "getting_spare_card",
+    "predicted": "age_limit",
+    "count": 1
+  },
+  {
+    "gold": "top_up_by_cash_or_cheque",
+    "predicted": "top_up_limits",
+    "count": 1
+  },
+  {
+    "gold": "order_physical_card",
+    "predicted": "country_support",
+    "count": 1
+  },
+  {
+    "gold": "order_physical_card",
+    "predicted": "top_up_by_card_charge",
+    "count": 1
+  },
+  {
+    "gold": "order_physical_card",
+    "predicted": "getting_virtual_card",
+    "count": 1
+  },
+  {
+    "gold": "order_physical_card",
+    "predicted": "card_delivery_estimate",
+    "count": 1
+  },
+  {
+    "gold": "virtual_card_not_working",
+    "predicted": "disposable_card_limits",
+    "count": 1
+  },
+  {
+    "gold": "virtual_card_not_working",
+    "predicted": "automatic_top_up",
+    "count": 1
+  },
+  {
+    "gold": "virtual_card_not_working",
+    "predicted": "getting_virtual_card",
+    "count": 1
+  },
+  {
+    "gold": "wrong_exchange_rate_for_cash_withdrawal",
+    "predicted": "exchange_charge",
+    "count": 1
+  },
+  {
+    "gold": "wrong_exchange_rate_for_cash_withdrawal",
+    "predicted": "atm_support",
+    "count": 1
+  },
+  {
+    "gold": "wrong_exchange_rate_for_cash_withdrawal",
+    "predicted": "exchange_rate",
+    "count": 1
+  },
+  {
+    "gold": "get_disposable_virtual_card",
+    "predicted": "getting_spare_card",
+    "count": 1
+  },
+  {
+    "gold": "get_disposable_virtual_card",
+    "predicted": "order_physical_card",
+    "count": 1
+  },
+  {
+    "gold": "get_disposable_virtual_card",
+    "predicted": "disposable_card_limits",
+    "count": 1
+  },
+  {
+    "gold": "top_up_failed",
+    "predicted": "pending_top_up",
+    "count": 1
+  },
+  {
+    "gold": "top_up_failed",
+    "predicted": "top_up_by_cash_or_cheque",
+    "count": 1
+  },
+  {
+    "gold": "balance_not_updated_after_bank_transfer",
+    "predicted": "transfer_timing",
+    "count": 1
+  },
+  {
+    "gold": "balance_not_updated_after_bank_transfer",
+    "predicted": "failed_transfer",
+    "count": 1
+  },
+  {
+    "gold": "cash_withdrawal_not_recognised",
+    "predicted": "compromised_card",
+    "count": 1
+  },
+  {
+    "gold": "cash_withdrawal_not_recognised",
+    "predicted": "card_payment_not_recognised",
+    "count": 1
+  },
+  {
+    "gold": "exchange_charge",
+    "predicted": "exchange_via_app",
+    "count": 1
+  },
+  {
+    "gold": "exchange_charge",
+    "predicted": "wrong_exchange_rate_for_cash_withdrawal",
+    "count": 1
+  },
+  {
+    "gold": "top_up_by_card_charge",
+    "predicted": "card_payment_fee_charged",
+    "count": 1
+  },
+  {
+    "gold": "activate_my_card",
+    "predicted": "card_arrival",
+    "count": 1
+  },
+  {
+    "gold": "activate_my_card",
+    "predicted": "lost_or_stolen_card",
+    "count": 1
+  },
+  {
+    "gold": "cash_withdrawal_charge",
+    "predicted": "card_payment_fee_charged",
+    "count": 1
+  },
+  {
+    "gold": "cash_withdrawal_charge",
+    "predicted": "wrong_exchange_rate_for_cash_withdrawal",
+    "count": 1
+  },
+  {
+    "gold": "card_about_to_expire",
+    "predicted": "card_delivery_estimate",
+    "count": 1
+  },
+  {
+    "gold": "verify_my_identity",
+    "predicted": "unable_to_verify_identity",
+    "count": 1
+  },
+  {
+    "gold": "verify_my_identity",
+    "predicted": "edit_personal_details",
+    "count": 1
+  },
+  {
+    "gold": "country_support",
+    "predicted": "atm_support",
+    "count": 1
+  }
+]
