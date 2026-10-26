@@ -1,82 +1,30 @@
-# H20 + Ascend 910B4 Heterogeneous Training Experiments
+# Jev / Laya 与 H20 / 910B4：从问题读到证据
 
-This repository contains the code, measurements, reports, and decision history
-for experiments asking whether a fixed pool of NVIDIA H20 and Ascend 910B4
-accelerators can outperform either homogeneous alternative.
+文档整理于 2026-10-26。这里保存模型质量与训练系统两个独立方向的代码、数据、报告和决策历史。
 
-The primary report is:
+模型质量问“判断能否做对，概率能否信”；训练系统问“怎样更快完成相同工作”。先选择你想读的问题：
 
-- [Cross-hardware low-frequency synchronization study](artifacts/16card-experiments/paper/report.md)
+1. 认识模型：[Jev / Laya 原理说明](jev-laya-research-2026-10-18-friendly.md)。
+2. 看实际质量：[三轮报告](artifacts/decision_study/REPORT.md) → [Banking77 图解](artifacts/decision_study/REPORT_BANKING77-friendly.md)。
+3. 看训练系统：[H20×16 图解](artifacts/16card-experiments/paper/report-friendly.md) → [混合实验后的选择](artifacts/experiment-conclusions-friendly.md)。
+4. 查术语与所有文档：[指标说明](artifacts/METRICS.md)、[完整阅读地图](artifacts/README.md)。
 
-## Latest update: 2026-10-25
+## 图与结果
 
-Both missing sixteen-card experiment arms are now stopped and will not be
-restarted. The original three-arm training comparison remains incomplete.
+![Banking77 准确率与配对差值](artifacts/figures/banking77-friendly.png)
 
-A separate [Jev/Laya decision quality study](artifacts/decision_study/REPORT.md)
-now contains three real-weight CPU rounds, per-case logits, frozen protocols,
-an AG News calibration map, and loadable Banking77 domain heads.
-The first calibration round regressed.
-The second round preserves 93.75% accuracy on a fresh 512-case custom holdout,
-reduces NLL from 0.1803 to 0.1746 and ECE from 0.0334 to 0.0235, while Brier
-slightly worsens. This is task-specific probability calibration, not SOTA.
-Jev has no measured result because the API credential is unavailable.
+Banking77 拟合 / 验证 / 测试为 9,229 / 770 / 3,072。验证选定的 75% 词法＋25% 冻结 Laya 分类头概率融合为 91.67%，词法基线 90.82%；净多答对 26 条，配对提升区间约 [+0.36,+1.33] 个百分点。它使用领域监督，原 Encoder / typed head 未更新；NLL、Brier、ECE 都比词法差，不能称所有质量指标改善。Jev 本轮没有 API 调用证据，也没有 SOTA 对照。
 
-The [third round](artifacts/decision_study/REPORT_BANKING77.md) uses 9,229
-domain training examples, 770 validation examples, and 3,072 deduplicated
-held-out Banking77 examples. The validation-selected blend of a lexical
-classifier (75%) and a frozen Laya encoder classifier (25%) reaches 91.67%
-accuracy, versus 90.82% for the lexical baseline; paired improvement is
-0.85 percentage points, with a 95% interval of [0.36, 1.33]. NLL, Brier,
-and ECE worsen versus the lexical baseline. Pure Laya reranking regresses.
-The original encoder and typed decision head are unchanged. This is
-supervised fixed-schema adaptation, with no SOTA or zero-shot parity claim.
-[Reproduction and runtime instructions](artifacts/decision_study/BANKING77_REPRODUCE.md)
-describe the saved heads and candidate mapping.
+![H20 网络与分片布局](artifacts/figures/h20-training-friendly.png)
 
-## Main result
+H20 两机共 16 卡完成三模型、七配置、每配置两次短程计时，以及九个生成 / 更新 case。27B 在 Socket 下，全局 FSDP 为 660.09 秒、机内分片 HSDP 为 216.60 秒。每 16 步参数平均为 83.30 秒，但改变更新规则，没有同质量时间证据。黑点是两次观测，不是置信区间。
 
-The completed H20 x16 experiments show that transport and topology dominate the
-short-run system result:
+历史 4＋4 没有证明混合胜过较快同构。新版 NPU×16 和混合 8＋8 两组于 10 月 25 日确认取消，原三组强比较未完成。不要把原稿当时的排队状态读成当前运行状态。
 
-- Qwen3.8-27B global FSDP took 70.56 seconds per 16 updates with RDMA and
-  660.09 seconds with forced Socket transport.
-- A 2 x 8 HSDP layout reduced the Socket result to 216.60 seconds while
-  preserving synchronous optimizer semantics.
-- Parameter averaging every 16 updates reduced it to 83.30 seconds, but this is
-  Local SGD with different optimization semantics and no time-to-quality proof.
-- Earlier 4+4 experiments did not establish a stable mixed-hardware advantage
-  over the faster homogeneous baseline.
+## 怎样复核与运行
 
-The new-model Ascend x16 and H20 x8 + Ascend x8 arms had not produced results at
-the reporting cutoff. The repository therefore does **not** claim that the
-three-arm comparison is complete or that heterogeneous hardware is faster at
-equal quality.
+[Banking77 运行说明](artifacts/decision_study/BANKING77_REPRODUCE.md)提供加载保存分类头和重新实验的步骤；[逐样本概率](artifacts/decision_study/results_round3/test_predictions.jsonl)、[选择锁](artifacts/decision_study/results_round3/selection.json)与[42 次计时](artifacts/16card-experiments/paper/training-metrics.json)允许独立核算。
 
-## Repository map
+需要保留历史、公式或冻结协议的文档新增 `-friendly` 阅读版本，原稿不覆盖。完整源代码和原始测量仍在 `artifacts/`；基础权重与依赖缓存不随包发布，领域线性头与词法参数保留。[绘图入口](artifacts/figures/render_friendly.py)和字体许可也随包提供。
 
-- `artifacts/16card-experiments/paper/`: paper-style report, 42 training runs,
-  nine pipeline cases, figures, and transport evidence.
-- `artifacts/16card-experiments/code/`: two-node FSDP/HSDP, CPU-island, and
-  generation/training pipeline implementations.
-- `artifacts/experiment-results/`: rank-level 4+4 and homogeneous 8-card data.
-- `artifacts/communication-results/`: CUDA/Ascend TCP and Gloo communication
-  feasibility evidence.
-- `artifacts/experiment-code/`: original and revised experiment snapshots.
-- `artifacts/*.md`: research, experiment design, comparisons, and conclusions.
-- `CONVERSATION_HISTORY.md`: user-visible project decision timeline.
-- `PUBLICATION_NOTES.md`: public-export scope and sanitization rules.
-
-## Reproducibility boundaries
-
-The original training experiments are infrastructure measurements, not a model-quality paper. The separate decision study states its own held-out calibration scope. The completed
-training timing cases use two repetitions and the generation/training pipeline
-uses one observation per case. Local SGD was not evaluated to a fixed quality
-threshold. The Qwen3.8 measurements use the shared Transformers-compatible
-Qwen3.5 implementation and still require formal output/gradient parity against
-the official reference before being used for a quality claim.
-
-Full foundation-model weights are not committed; the small domain classifier
-heads and vectorizer parameters are included. Immutable revisions and SHA256 manifests are
-under `artifacts/experiment-assets-manifest.json` and
-`artifacts/16card-experiments/new-model-manifest.json`.
+[决策历史说明](CONVERSATION_HISTORY-friendly.md)连接各阶段，原[对话摘录](CONVERSATION_HISTORY.md)保留。[发布说明](PUBLICATION_NOTES.md)解释脱敏范围，`PUBLIC_SHA256SUMS` 校验公共文件；原实验代码指纹描述脱敏前快照。

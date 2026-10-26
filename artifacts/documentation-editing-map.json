@@ -1,0 +1,164 @@
+{
+  "date": "2026-10-26",
+  "scope": "Jev/Laya decision studies and H20/910B4 training project, including the inter-8-8 publication; unrelated workspace projects excluded",
+  "skill": "scientific-writing-editing",
+  "documents": [
+    {
+      "original": "laya/16card-experiments/cancellation-20261025.md",
+      "output": "laya/16card-experiments/cancellation-20261025-friendly.md",
+      "mode": "friendly_companion",
+      "original_sha256": "580fd07c2ffcf7eabe7f449bf9dc9589183e1d825df93538cfaa0e45bcb9fc59"
+    },
+    {
+      "original": "laya/16card-experiments/new-architecture-matrix.md",
+      "output": "laya/16card-experiments/new-architecture-matrix-friendly.md",
+      "mode": "friendly_companion",
+      "original_sha256": "bfcc36d865e6cbb2045b5f0da3cf61f53b7595eaab7c302e075d562b4238eab7"
+    },
+    {
+      "original": "laya/16card-experiments/paper/report.md",
+      "output": "laya/16card-experiments/paper/report-friendly.md",
+      "mode": "friendly_companion",
+      "original_sha256": "929c0f79d1b93755de8047fe996002ef3c17f88d965ceda4db55cd644caa9c3b"
+    },
+    {
+      "original": "laya/16card-experiments/queue-status.md",
+      "output": "laya/16card-experiments/queue-status-friendly.md",
+      "mode": "friendly_companion",
+      "original_sha256": "0bc0e7c44bb1ac50006a15a1aa40265309a9ceee932894622e296a381322ac94"
+    },
+    {
+      "original": "laya/README.md",
+      "output": "laya/README.md",
+      "mode": "edit_in_place",
+      "original_sha256": "899d53f0bc514dedd53b18de3c76516d04aea79f98c7bbb31e3200d5957e6459"
+    },
+    {
+      "original": "laya/combination-comparison.md",
+      "output": "laya/combination-comparison-friendly.md",
+      "mode": "friendly_companion",
+      "original_sha256": "58fd2da9b2164627cea554628bcd785323ed210c70b7d32a798ec409537ae336"
+    },
+    {
+      "original": "laya/communication-feasibility.md",
+      "output": "laya/communication-feasibility-friendly.md",
+      "mode": "friendly_companion",
+      "original_sha256": "3be83246df1cc3f0198f29b5d68fc7b23e124bbfc6a91256e7a3d4319a459fec"
+    },
+    {
+      "original": "laya/communication-results/report.md",
+      "output": "laya/communication-results/report-friendly.md",
+      "mode": "friendly_companion",
+      "original_sha256": "77b0dfe396a2e0ce77ad3b66cd35413ce5ed3728d2ba9181631ce8999028d90b"
+    },
+    {
+      "original": "laya/decision_study/BANKING77_REPRODUCE.md",
+      "output": "laya/decision_study/BANKING77_REPRODUCE.md",
+      "mode": "edit_in_place",
+      "original_sha256": "573e2e35964cfe49cbae5f65b4a972889a921284b7fad47ae2547981547220dc"
+    },
+    {
+      "original": "laya/decision_study/PROTOCOL.md",
+      "output": "laya/decision_study/PROTOCOL-friendly.md",
+      "mode": "friendly_companion",
+      "original_sha256": "676a27a9ed18fe3efef065d552704d2ab917a2b24fb2b4427aa133f722058a35"
+    },
+    {
+      "original": "laya/decision_study/PROTOCOL_ROUND2.md",
+      "output": "laya/decision_study/PROTOCOL_ROUND2-friendly.md",
+      "mode": "friendly_companion",
+      "original_sha256": "ed436565198514c7594f9391ac042139ea0d7dc41f06e3e9d13ebc568558815e"
+    },
+    {
+      "original": "laya/decision_study/PROTOCOL_ROUND3.md",
+      "output": "laya/decision_study/PROTOCOL_ROUND3-friendly.md",
+      "mode": "friendly_companion",
+      "original_sha256": "5b63d55b4c7cb6908a54906181572948b67f5528c4aeaa6f8d23a2ac4b0877b5"
+    },
+    {
+      "original": "laya/decision_study/REPORT.md",
+      "output": "laya/decision_study/REPORT.md",
+      "mode": "edit_in_place",
+      "original_sha256": "d6e0040fdccafb06b34f15020ee438eccdb8296245285b1840a2d401f7b43492"
+    },
+    {
+      "original": "laya/decision_study/REPORT_BANKING77.md",
+      "output": "laya/decision_study/REPORT_BANKING77-friendly.md",
+      "mode": "friendly_companion",
+      "original_sha256": "8189edcbf439a9736ea266349152f5a8a66fae5f126cc7c2b71cf6d81749fb56"
+    },
+    {
+      "original": "laya/decision_study/data/banking77/ATTRIBUTION.md",
+      "output": "laya/decision_study/data/banking77/ATTRIBUTION.md",
+      "mode": "unchanged_attribution",
+      "original_sha256": "1ffcd392eb6ff498b5db205c284c2881abbfc212b5e920a44f6ac6af7df4c00a"
+    },
+    {
+      "original": "laya/experiment-conclusions.md",
+      "output": "laya/experiment-conclusions-friendly.md",
+      "mode": "friendly_companion",
+      "original_sha256": "c04811cbcb42d60fcc10433c030f0a8b003b4dd69efc34ca65b252571f0c76b5"
+    },
+    {
+      "original": "laya/experiment-matrix.md",
+      "output": "laya/experiment-matrix-friendly.md",
+      "mode": "friendly_companion",
+      "original_sha256": "c29a66291129659d345b7fe56b586f1a0252069e80886bcdd6db80fe468e46e7"
+    },
+    {
+      "original": "laya/experiment-results-report.md",
+      "output": "laya/experiment-results-report-friendly.md",
+      "mode": "friendly_companion",
+      "original_sha256": "0c5c773c21443d0817cb580e7f955e178a5f120f0ea6d5c9c2038a166e1bf378"
+    },
+    {
+      "original": "laya/heterogeneous-training-decision.md",
+      "output": "laya/heterogeneous-training-decision-friendly.md",
+      "mode": "friendly_companion",
+      "original_sha256": "32dc6f17cc68a9aebf6ed363c467e5a34e3504175c16a8bf183b6bb4ed7b6a3c"
+    },
+    {
+      "original": "laya/project-pitches.md",
+      "output": "laya/project-pitches-friendly.md",
+      "mode": "friendly_companion",
+      "original_sha256": "e123a9b0f0077bbedb37cb24cea4e88978c94c00c1010f8fdd8a03f8bb9a57d7"
+    },
+    {
+      "original": "laya/proposal.md",
+      "output": "laya/proposal-friendly.md",
+      "mode": "friendly_companion",
+      "original_sha256": "6cb7182250136de872eb34e85b0273769eeefcf5905798d841f5e7e482a6fa01"
+    },
+    {
+      "original": "laya/research.md",
+      "output": "laya/research-friendly.md",
+      "mode": "friendly_companion",
+      "original_sha256": "5ea9bc9c7498aa8733c461cb4fbe3750601074ccd7efcdfa4ce59ab32f44a207"
+    },
+    {
+      "original": "laya/16card-experiments/paper/transport-evidence.txt",
+      "output": "laya/16card-experiments/paper/transport-evidence-friendly.md",
+      "mode": "friendly_log_guide",
+      "original_sha256": "0ed846d899c5a3899dc6b21c3b7e5138d703162f88154cdbfcabbeb2555865d2"
+    },
+    {
+      "original": "jev-laya-research-2026-10-18.md",
+      "output": "jev-laya-research-2026-10-18-friendly.md",
+      "mode": "friendly_companion",
+      "original_sha256": "52a5821955c6ce12ce391fc22b2137b2779673fbc535a146ea091071c892eec2"
+    }
+  ],
+  "public_only": {
+    "README.md": "edit_in_place",
+    "PUBLICATION_NOTES.md": "edit_in_place",
+    "CONVERSATION_HISTORY.md": "friendly_companion",
+    "artifacts/README.md": "sync_laya_README"
+  },
+  "requirements": [
+    "preserve original hashes for companions",
+    "preserve data, weights, protocol and code evidence",
+    "three separate editing passes: evidence, comprehension order, language",
+    "render and inspect measured-data figures",
+    "sync authorized public export and deliver complete ZIP"
+  ]
+}

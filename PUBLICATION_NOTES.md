@@ -1,39 +1,23 @@
-# Public export notes
+# 公共归档包含什么，怎样核对文件
 
-## Included
+本仓库保存 Jev / Laya 决策实验与 H20 / 910B4 训练系统研究。阅读从[入口](README.md)开始；技术原稿、冻结协议和历史状态保留，必要时增加 `-friendly` 说明。整理没有新做模型实验，也没有用旧第三方成绩补成 Jev 当前结果。
 
-- Experiment source code and archived revisions.
-- Rank-level JSONL measurements.
-- Aggregate CSV/JSON metrics.
-- Communication feasibility records.
-- Model revision and SHA256 manifests.
-- Research, plans, comparison reports, conclusions, and the final paper-style
-  report.
-- A curated history of user-visible requests and engineering decisions.
-- Banking77's CC BY 4.0 source files and attribution, domain classifier
-  parameters, frozen-protocol predictions, and runtime parity records.
+## 随包保留的材料
 
-## Sanitized
+实验源码及历史快照、rank 级 JSONL、CSV / JSON 汇总、通信证据、模型 revision 和 SHA256、方案与报告、公开可见请求的整理历史都保留。Banking77 的 CC BY 4.0 源文件、归属说明、领域分类头、词法参数、完整概率和回放记录也保留。
 
-The following identifiers were deterministically replaced without changing
-performance measurements:
+阅读图由真实指标绘制，提供 Python 入口、图用数据与 Noto CJK 字体 / 许可。字体仅用于复现中文图；依赖和完整基础模型权重需按运行说明自行准备。
 
-- physical host names;
-- internal IPv4/IPv6 and MAC addresses;
-- GPU UUIDs;
-- scheduler trace, request, trial, pod, container, and run-pair identifiers;
-- links to private infrastructure or internal documents.
+## 脱敏与两个哈希口径
 
-Public model repository revisions and content SHA256 values were retained.
-Archived code-hash manifests describe the pre-sanitization experiment snapshot.
-`PUBLIC_SHA256SUMS` records the exact files in this public export.
+公共导出用确定性替换处理物理主机、内部网络地址、MAC、GPU UUID、调度 trace / request / trial / pod / container / run-pair 标识和内部链接。性能数字、模型公开 revision 和内容 SHA256 保留。
 
-## Excluded
+原实验代码哈希描述当时实际执行的脱敏前快照；脱敏后文件自然不再与它逐字节相同。`PUBLIC_SHA256SUMS` 描述当前公共文件，用于检查下载是否完整，两者用途不同。
 
-The export intentionally excludes Python bytecode/cache files, transient
-staging logs, raw scheduler submissions/status snapshots, authentication data,
-system prompts, hidden tool output, and bootstrap logs that may contain
-environment details. These are operational artifacts rather than experiment
-inputs or measurements.
+本轮只对新增或直接整理的公共文档做导出，不重新清洗既有测量 / 代码文件。原技术与历史稿的公共副本保持原字节，便于追溯。
 
-The sanitization utility is available at `tools/sanitize_public.py`.
+## 未收录的材料
+
+完整基础权重、依赖缓存、bytecode、临时 staging、原始调度提交 / 查询快照、认证资料、系统提示、隐藏工具输出和可能含环境信息的 bootstrap 全文没有发布。完整测量不能由未收录运行日志推测补齐。
+
+脱敏工具为[tools/sanitize_public.py](tools/sanitize_public.py)。阅读版本的本地映射和保留规则记录在 `artifacts/documentation-editing-map.json`；该映射记录编辑范围，不是新的模型证据。

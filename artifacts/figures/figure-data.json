@@ -1,0 +1,70 @@
+{
+  "sources": {
+    "decision_study/results_round3/results.json": "2b497e57c49f01f971edc57f65feb18bfb07976c16bd29313af0b6ef43da44dd",
+    "16card-experiments/paper/training-metrics.json": "e56096bdfd2ffa6b14ce48441656fc3fcaa02c5beed8bc6be8da9a9f1511b6e9"
+  },
+  "banking77_accuracy_percent": {
+    "laya_default": 45.08463541666667,
+    "laya_wide": 56.998697916666664,
+    "lexical": 90.8203125,
+    "dense": 82.421875,
+    "supervised": 91.66666666666666,
+    "laya_top10": 67.25260416666666
+  },
+  "paired_delta_pp": 0.8463541666666666,
+  "paired_ci95_pp": [
+    0.35807291666666663,
+    1.3346354166666665
+  ],
+  "training_two_observations_seconds": {
+    "q35:native16:native:1": [
+      31.885549669037573,
+      28.17061795387417
+    ],
+    "q35:native16:socket:1": [
+      110.93781442428008,
+      108.18534669512883
+    ],
+    "q35:native-hybrid16:socket:1": [
+      48.40530165517703,
+      48.16901461908128
+    ],
+    "q35:cpu-islands:cpu-tcp:16": [
+      32.81587704597041,
+      30.670563332736492
+    ],
+    "q359:native16:native:1": [
+      42.71212724992074,
+      29.91198236029595
+    ],
+    "q359:native16:socket:1": [
+      212.16101723897737,
+      210.5265826098621
+    ],
+    "q359:native-hybrid16:socket:1": [
+      85.96433015028015,
+      80.94232677901164
+    ],
+    "q359:cpu-islands:cpu-tcp:16": [
+      38.881924820132554,
+      36.070134575944394
+    ],
+    "q38:native16:native:1": [
+      72.69224788399879,
+      68.43595659499988
+    ],
+    "q38:native16:socket:1": [
+      670.4252431499772,
+      649.7627154309303
+    ],
+    "q38:native-hybrid16:socket:1": [
+      215.82961945305578,
+      217.36576167773455
+    ],
+    "q38:cpu-islands:cpu-tcp:16": [
+      82.28267231397331,
+      84.31886911392212
+    ]
+  },
+  "mean_vs_raw_observations": "bars are arithmetic means; black points are raw repetitions"
+}
