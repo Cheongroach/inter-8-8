@@ -148,6 +148,21 @@
       "original_sha256": "52a5821955c6ce12ce391fc22b2137b2779673fbc535a146ea091071c892eec2"
     }
   ],
+  "stepwise_reading": {
+    "date": "2026-10-27",
+    "reference": "tensorrt-150/一步步认识TensorRT项目-friendly.md",
+    "known_basics": [
+      "embedding",
+      "tokenization",
+      "batch",
+      "GPU",
+      "basic inference"
+    ],
+    "entry": "laya/一步步认识Jev-Laya项目-friendly.md",
+    "followup": "laya/一步步认识训练系统实验-friendly.md",
+    "structure": "one concept and one checkpoint per step; code and full results after the learning sequence",
+    "scope": "new guided reading paths; existing technical reports remain supporting evidence"
+  },
   "public_only": {
     "README.md": "edit_in_place",
     "PUBLICATION_NOTES.md": "edit_in_place",

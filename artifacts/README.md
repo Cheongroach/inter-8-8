@@ -1,16 +1,24 @@
 # Jev / Laya 与训练系统：从这里开始读
 
-文档整理日期：2026-10-26；决策质量数据截至 10 月 25 日，H20×16 数据截至 10 月 21 日。
+第一次阅读，请只打开[一步步认识 Jev / Laya 项目](一步步认识Jev-Laya项目-friendly.md)。
+
+先读第一阶段的五步：业务去向 → 候选 → 概率输出 → 决策模型 → Jev / Laya。能回答每步的问题后，再进入下一阶段。embedding、分词、batch 等已有基础不再重复。
+
+读完模型篇，再进入[一步步认识训练系统实验](一步步认识训练系统实验-friendly.md)。其余报告在需要查方法、数字或代码时再打开。
+
+以下保留完整查证地图。逐步稿整理于 2026-10-27；决策质量数据截至 10 月 25 日，H20×16 数据截至 10 月 21 日。
+
+## 研究范围
 
 这个目录研究过两个问题。一个是“模型能不能把判断做对，给出的概率能不能信”；另一个是“把训练放在 H20 和昇腾上，能不能更快完成”。它们分别需要质量数据和系统数据，不能用训练速度回答模型能力问题。
 
 Jev 是托管决策 API；Laya 是可下载、可训练的决策模型。决策模型直接从允许的选项中选择答案，并给出概率，例如把“转账还没到账”归入某个银行业务类别。H20 是 NVIDIA GPU，910B4 是昇腾 NPU；这里的“异构”指同时使用两类设备，“同构”指只用一类。
 
-## 第一次阅读
+## 按需查证
 
-1. 想先认识模型，读[模型与接口说明](../jev-laya-research-2026-10-18-friendly.md)。
-2. 想知道 Jev / Laya 做到了什么，读[三轮质量实验](decision_study/REPORT.md)，再看[Banking77 图解报告](decision_study/REPORT_BANKING77-friendly.md)。
-3. 想理解训练系统，读[H20×16 图解报告](16card-experiments/paper/report-friendly.md)，再看[混合设备实验后的选择](experiment-conclusions-friendly.md)。
+1. 模型结构与来源：[模型与接口说明](../jev-laya-research-2026-10-18-friendly.md)。
+2. 决策质量设置和完整结果：[三轮质量实验](decision_study/REPORT.md)、[Banking77 报告](decision_study/REPORT_BANKING77-friendly.md)。
+3. 训练设置与证据边界：[H20×16 报告](16card-experiments/paper/report-friendly.md)、[混合设备实验后的选择](experiment-conclusions-friendly.md)。
 
 遇到 accuracy、NLL、FSDP、HSDP、Local SGD 等缩写，可查[指标与术语](METRICS.md)。每份说明也会在首次使用时解释关键概念。
 
@@ -32,6 +40,8 @@ Banking77 融合是“75% 词法分类器概率＋25% 冻结 Laya Encoder 分类
 
 | 内容 | 整理后的阅读版本 | 保留的技术 / 历史原稿 |
 |---|---|---|
+| 从具体请求逐步学习 | [模型篇](一步步认识Jev-Laya项目-friendly.md) | 后文链接原始证据 |
+| 从同工作计时逐步学习 | [训练系统篇](一步步认识训练系统实验-friendly.md) | 后文链接原始证据 |
 | Jev / Laya 结构、训练、推理 | [模型说明](../jev-laya-research-2026-10-18-friendly.md) | [原调研](../jev-laya-research-2026-10-18.md) |
 | 三轮质量进展 | [REPORT](decision_study/REPORT.md) | 同名文件直接整理 |
 | Banking77 完整结果 | [图解结果](decision_study/REPORT_BANKING77-friendly.md) | [原结果](decision_study/REPORT_BANKING77.md) |
