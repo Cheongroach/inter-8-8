@@ -10,6 +10,7 @@
 
 | 需要查询 | 入口 |
 |---|---|
+| Laya 架构、输入输出、超参数与训练算法 | [Laya 模型技术说明](artifacts/Laya模型技术说明.md) |
 | 三轮决策实验 | [完整报告](artifacts/decision_study/REPORT.md)、[Banking77 结果](artifacts/decision_study/REPORT_BANKING77-friendly.md) |
 | H20 / NPU 系统证据 | [H20×16 报告](artifacts/16card-experiments/paper/report-friendly.md)、[历史组合结论](artifacts/experiment-conclusions-friendly.md) |
 | 加载分类器或重新实验 | [运行步骤](artifacts/decision_study/BANKING77_REPRODUCE.md) |
